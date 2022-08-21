@@ -1,0 +1,898 @@
+@import "../../vars";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: $tanpabatascream;
+}
+
+.tentang-slider {
+  background-color: $tanpabatasgreen;
+  height: 90vh;
+  color: #fff;
+  position: relative;
+  padding-top: 800px;
+
+  .texts {
+    h1 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 57px;
+    }
+  }
+
+  .tentang-slider-btns {
+    button {
+      background: none;
+      border: none;
+    }
+
+    .slider-button-prev,
+    .slider-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      img {
+        width: 15px;
+        opacity: .75;
+      }
+    }
+
+    .slider-button-prev {
+      left: 50px;
+    }
+    .slider-button-next {
+      right: 50px;
+    }
+  }
+
+  .tentang-slider-item {
+    // cursor: default;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 300ms;
+    opacity: 0;
+    top: 50%;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .rowslider{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'textbox imgbox';
+    }
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .carousel-textbox {
+    grid-area: textbox;
+
+    position: relative;
+    display: grid;
+    align-items: center;
+    //styleName: Description 2;
+    //styleName: Description 2;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .carousel-imgbox {
+    grid-area: imgbox;
+    img {
+      position: relative;
+      left: 25%;
+    }
+  }
+
+  #tentang-slider-paginations {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .tentang-slider-pagination {
+      margin-left: 5px;
+      width: 20px;
+      height: 20px;
+      background: none;
+      border: 2px solid $tanpabatascream;
+      border-radius: 50%;
+      transform: scale(0.8);
+      transition: scale 300ms;
+      transition: background 300ms;
+    }
+
+    .active {
+      background-color: $tanpabatascream;
+      transform: scale(1);
+    }
+  }
+}
+
+.tentang-visimisi {
+  margin-bottom: 130px;
+
+  .visimisi-title {
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+
+  .card {
+    padding: 10px;
+    width: 344px;
+    min-height: 338px;
+    border-radius: 27px;
+    border: none;
+    color: #fff;
+
+    @media (max-width: 992px) {
+      margin-bottom: 50px;
+    }
+
+    // letter-spacing: 0em;
+    // text-align: left;
+
+    h5 {
+      margin: 20px 0;
+      margin-bottom: 10px;
+      font-family: Poppins;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  .card-img-box {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 100%;
+    }
+  }
+
+  .green-card {
+    background: #7ccc6c;
+    box-shadow: 0px 0px 12px 2px #7ccc6c;
+  }
+  .pink-card {
+    background: #ff6572;
+    box-shadow: 0px 4px 40px #ff6572;
+  }
+  .orange-card {
+    background: #ff8f1c;
+    box-shadow: 0px 4px 40px #ff8f1c;
+  }
+}
+
+.tentang-kontribusi {
+  background-color: $tanpabatasgreen;
+  height: 680px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+
+  .tentang-kontribusi-headtitle {
+    .h1,
+    h1 {
+      font-size: 38px;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+      margin-top: 30px;
+      font-family: Poppins;
+      font-weight: 700;
+    }
+  }
+
+  .tentang-kontribusi-inner {
+    position: relative;
+    height: 100%;
+    margin-left: 40px;
+    overflow-x: hidden;
+  }
+
+  .tentang-kontribusi-card {
+    height: 480px;
+    width: 300px;
+    position: relative;
+    top: 55%;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: $tanpabatascream;
+    margin-right: 80px;
+
+    .kontribusi-imgbox {
+      position: relative;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 220px;
+      width: 220px;
+      background-color: #333;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .kontribusi-knowme {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 55%;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .kontribusi-name {
+      h5 {
+        font-family: "inter";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .kontribusi-role {
+      h6 {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0;
+      }
+    }
+
+    .kontribusi-desc {
+      p {
+        font-family: "Poppins";
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .kontribusi-soscm {
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 30px;
+    }
+    .kontribusi-icons {
+      font-size: 28px;
+      position: absolute;
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #333;
+      }
+    }
+  }
+
+  .tentang-kontribusi-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 33%,
+      rgba(40, 142, 102, 1) 76%
+    );
+  }
+
+  .tentang-kontribusi-btn {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    z-index: 3;
+    right: 0;
+    background-color: $tanpabatasgreen;
+    color: #fff;
+    // text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+
+    .inner-btn {
+      top: 50%;
+
+      h2 {
+        font-family: "Poppins";
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 57px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    .btn {
+      padding: 10px 20px;
+      color: #000;
+      background-color: #fff;
+      font-family: "Poppins";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: left;
+      border: none;
+
+      &:hover {
+        background-color: darken($color: #fff, $amount: 10);
+      }
+    }
+  }
+}
+
+.tentang-modal-dialog {
+  max-width: 95vw;
+  justify-content: center;
+}
+
+.tentang-model-content {
+  background-color: $tanpabatasgreen;
+  color: #fff;
+  height: 600px;
+  width: 95vw;
+  max-width: 1420px;
+  border-radius: 40px;
+  .modal-body {
+    padding-top: 0;
+    z-index: 9;
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding-top: 25px;
+    padding-right: 50px;
+    max-height: 30px;
+  }
+
+  .modal-kontribusi-inner {
+    position: relative;
+    height: 100%;
+    margin-left: 40px;
+    color: #000;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+
+  .tentang-kontribusi-card {
+    width: 300px;
+    position: relative;
+    border-radius: 25px;
+    height: 550px;
+    transform: translateY(-50%);
+    padding: 20px;
+    background-color: $tanpabatascream;
+    margin-right: 40px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    transform: scale(0.86);
+
+    .kontribusi-imgbox {
+      position: relative;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 220px;
+      width: 220px;
+      background-color: #333;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .kontribusi-knowme {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 55%;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .kontribusi-name {
+      h5 {
+        font-family: "inter";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .kontribusi-role {
+      h6 {
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0;
+      }
+    }
+
+    .kontribusi-desc {
+      p {
+        font-family: "Poppins";
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+
+    .kontribusi-soscm {
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 30px;
+    }
+    .kontribusi-icons {
+      font-size: 28px;
+      position: absolute;
+      width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+
+.tentang-quotes {
+  margin: 100px 0;
+  h1 {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .quotes-quotes {
+    display: flex;
+    align-items: center;
+    grid-area: top;
+  }
+  span {
+    color: $tanpabatasgreen;
+  }
+
+  .quotes-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 'top bottom';
+  }
+
+  .quotes-img{
+    grid-area: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+}
+
+.cardslider {
+  background-color: $tanpabatasgreen;
+  height: 600px;
+  border-radius: 0 0 50px 50px;
+  color: #fff;
+  position: relative;
+
+  .splide {
+    margin-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .splide__slide {
+    justify-content: center;
+    display: grid;
+  }
+  .cardslider-title {
+    font-family: "Poppins";
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .cardslider-card-title {
+    position: relative;
+    padding: 20px;
+  }
+
+  .cardslider-card {
+    border-radius: 50px;
+    width: 350px;
+    height: 350px;
+    background-color: #7ccc6c;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+
+    h2 {
+      font-family: "Poppins";
+      font-size: 17px;
+      font-weight: 700;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .cardslider-card-imgbox {
+      position: relative;
+      img {
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+@media(min-width: 1400px){
+  .cardslider{
+    .cardslider-card{
+      width: 430px;
+      height: 430px;
+    }
+  }
+}
+
+@media (max-width: 1320px) {
+  .tentang-model-content {
+    .tentang-kontribusi-card {
+      width: 300px;
+      height: 550px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .tentang-slider {
+    .carousel-textbox {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardslider {
+    .cardslider-card {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .cardslider {
+    height: auto;
+    padding: 60px 40px;
+    .container{
+      max-width: 1320px;
+    }
+    .cardslider-title{
+      padding-bottom: 50px;
+    }
+
+    .cardslider-card{
+      width: 330px;
+      height: 330px;
+    }
+
+    .splide {
+      margin: 0;
+    }
+
+    .br {
+      display: none;
+    }
+
+    .container {
+      height: auto !important;
+    }
+    .row {
+      height: auto !important;
+    }
+
+    .cardslider-title {
+      position: relative;
+      font-size: 28px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .tentang-visimisi {
+    .container {
+      max-width: 1020px;
+    }
+    .card {
+      width: 304px;
+
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tentang-slider {
+    padding-top: 1100px;
+    .carousel-textbox {
+      font-size: 18px;
+    }
+
+    .carousel-imgbox{
+      margin-bottom: 3rem;
+
+      img{
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+      }
+    }
+
+    .tentang-slider-item .rowslider{
+      grid-template-columns: 1fr;
+      grid-template-areas: 'imgbox' 'textbox' !important;
+    }
+
+  
+  }
+  .tentang-kontribusi {
+    height: 780px;
+    .tentang-kontribusi-btn {
+      height: 80%;
+    }
+    .tentang-kontribusi-inner {
+      height: 80%;
+    }
+    .tentang-kontribusi-footerbtn {
+      margin: 0;
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+      .btn {
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        border: none;
+
+        &:hover {
+          background-color: darken($color: #fff, $amount: 10);
+        }
+      }
+    }
+  }
+  .tentang-quotes{
+    .quotes-grid{
+      grid-template-columns: 1fr;
+      row-gap: 50px;
+      grid-template-areas: 'bottom' 'top';
+
+    }
+    .quotes-quotes{
+      h1{
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .tentang-slider {
+    min-height: 800px;
+
+    height: auto;
+
+    .carousel-textbox {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .carousel-imgbox {
+      position: relative;
+
+      img {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .tentang-model-content {
+    .modal-body {
+      padding: 0;
+    }
+    .modal-kontribusi-inner {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .cardslider {
+    .cardslider-title{
+      line-height: 28px;
+    }
+    .cardslider-card {
+      width: 200px;
+      height: 250px;
+      border-radius: 15px;
+
+      h2{
+        font-size: 13px;
+      }
+    }
+  }
+  .tentang-slider {
+    height: auto;
+    padding-top: 800px;
+    .carousel-textbox {
+      font-size: 11px;
+      line-height: normal;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .splide__kontribusi__list {
+    .splide__slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .tentang-kontribusi .tentang-kontribusi-headtitle h1{
+    font-size: 31px;
+  }
+}
+
+@media(max-width: 522px){
+  .tentang-quotes{
+    .quotes-quotes{
+      h1{
+        font-size: 28px;
+      }
+    }
+    .quotes-img img{
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 403px) {
+  .tentang-kontribusi {
+    height: 800px;
+
+    .tentang-kontribusi-inner {
+      height: 75%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+
+  .tentang-quotes{
+
+    .quotes-quotes h1{
+      font-size: 22px;
+      line-height: normal;
+    }
+    .quotes-img img{
+      width: 100%;
+    }
+  }
+
+  
+}
+@media (max-width: 320px) {
+
+  .cardslider{
+    .cardslider-title{
+      font-size: 20px;
+    }
+  }
+
+  
+}

@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #FAEBB8;
+}
+
+.tentang-slider {
+  background-color: #288E66;
+  height: 90vh;
+  color: #fff;
+  position: relative;
+  padding-top: 800px;
+}
+.tentang-slider .texts h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 57px;
+}
+.tentang-slider .tentang-slider-btns button {
+  background: none;
+  border: none;
+}
+.tentang-slider .tentang-slider-btns .slider-button-prev,
+.tentang-slider .tentang-slider-btns .slider-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tentang-slider .tentang-slider-btns .slider-button-prev img,
+.tentang-slider .tentang-slider-btns .slider-button-next img {
+  width: 15px;
+  opacity: 0.75;
+}
+.tentang-slider .tentang-slider-btns .slider-button-prev {
+  left: 50px;
+}
+.tentang-slider .tentang-slider-btns .slider-button-next {
+  right: 50px;
+}
+.tentang-slider .tentang-slider-item {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 300ms;
+  opacity: 0;
+  top: 50%;
+}
+.tentang-slider .tentang-slider-item img {
+  width: 100%;
+  max-width: 400px;
+}
+.tentang-slider .tentang-slider-item .rowslider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "textbox imgbox";
+}
+.tentang-slider .active {
+  opacity: 1;
+}
+.tentang-slider .carousel-textbox {
+  grid-area: textbox;
+  position: relative;
+  display: grid;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+.tentang-slider .carousel-imgbox {
+  grid-area: imgbox;
+}
+.tentang-slider .carousel-imgbox img {
+  position: relative;
+  left: 25%;
+}
+.tentang-slider #tentang-slider-paginations {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tentang-slider #tentang-slider-paginations .tentang-slider-pagination {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: 2px solid #FAEBB8;
+  border-radius: 50%;
+  transform: scale(0.8);
+  transition: scale 300ms;
+  transition: background 300ms;
+}
+.tentang-slider #tentang-slider-paginations .active {
+  background-color: #FAEBB8;
+  transform: scale(1);
+}
+
+.tentang-visimisi {
+  margin-bottom: 130px;
+}
+.tentang-visimisi .visimisi-title {
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 95px;
+}
+.tentang-visimisi .card {
+  padding: 10px;
+  width: 344px;
+  min-height: 338px;
+  border-radius: 27px;
+  border: none;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .tentang-visimisi .card {
+    margin-bottom: 50px;
+  }
+}
+.tentang-visimisi .card h5 {
+  margin: 20px 0;
+  margin-bottom: 10px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tentang-visimisi .card p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tentang-visimisi .card-img-box {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tentang-visimisi .card-img-box img {
+  height: 100%;
+}
+.tentang-visimisi .green-card {
+  background: #7ccc6c;
+  box-shadow: 0px 0px 12px 2px #7ccc6c;
+}
+.tentang-visimisi .pink-card {
+  background: #ff6572;
+  box-shadow: 0px 4px 40px #ff6572;
+}
+.tentang-visimisi .orange-card {
+  background: #ff8f1c;
+  box-shadow: 0px 4px 40px #ff8f1c;
+}
+
+.tentang-kontribusi {
+  background-color: #288E66;
+  height: 680px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.tentang-kontribusi .tentang-kontribusi-headtitle .h1,
+.tentang-kontribusi .tentang-kontribusi-headtitle h1 {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-top: 30px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.tentang-kontribusi .tentang-kontribusi-inner {
+  position: relative;
+  height: 100%;
+  margin-left: 40px;
+  overflow-x: hidden;
+}
+.tentang-kontribusi .tentang-kontribusi-card {
+  height: 480px;
+  width: 300px;
+  position: relative;
+  top: 55%;
+  border-radius: 25px;
+  transform: translateY(-50%);
+  padding: 20px;
+  background-color: #FAEBB8;
+  margin-right: 80px;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-imgbox {
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 220px;
+  width: 220px;
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-imgbox img {
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-knowme {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 55%;
+  padding: 20px;
+  width: 100%;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-name h5 {
+  font-family: "inter";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-role h6 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-desc p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-soscm {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-icons {
+  font-size: 28px;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.tentang-kontribusi .tentang-kontribusi-card .kontribusi-icons a {
+  color: #333;
+}
+.tentang-kontribusi .tentang-kontribusi-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 33%, #288e66 76%);
+}
+.tentang-kontribusi .tentang-kontribusi-btn {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  z-index: 3;
+  right: 0;
+  background-color: #288E66;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+.tentang-kontribusi .tentang-kontribusi-btn .inner-btn {
+  top: 50%;
+}
+.tentang-kontribusi .tentang-kontribusi-btn .inner-btn h2 {
+  font-family: "Poppins";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tentang-kontribusi .tentang-kontribusi-btn .btn {
+  padding: 10px 20px;
+  color: #000;
+  background-color: #fff;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+}
+.tentang-kontribusi .tentang-kontribusi-btn .btn:hover {
+  background-color: #e6e6e6;
+}
+
+.tentang-modal-dialog {
+  max-width: 95vw;
+  justify-content: center;
+}
+
+.tentang-model-content {
+  background-color: #288E66;
+  color: #fff;
+  height: 600px;
+  width: 95vw;
+  max-width: 1420px;
+  border-radius: 40px;
+}
+.tentang-model-content .modal-body {
+  padding-top: 0;
+  z-index: 9;
+}
+.tentang-model-content .modal-header {
+  border-bottom: none;
+  padding-top: 25px;
+  padding-right: 50px;
+  max-height: 30px;
+}
+.tentang-model-content .modal-kontribusi-inner {
+  position: relative;
+  height: 100%;
+  margin-left: 40px;
+  color: #000;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.tentang-model-content .tentang-kontribusi-card {
+  width: 300px;
+  position: relative;
+  border-radius: 25px;
+  height: 550px;
+  transform: translateY(-50%);
+  padding: 20px;
+  background-color: #FAEBB8;
+  margin-right: 40px;
+  transform: scale(0.86);
+}
+.tentang-model-content .tentang-kontribusi-card:nth-last-child(1) {
+  margin-right: 0;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-imgbox {
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 220px;
+  width: 220px;
+  background-color: #333;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-imgbox img {
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-knowme {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 55%;
+  padding: 20px;
+  width: 100%;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-name h5 {
+  font-family: "inter";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-role h6 {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-desc p {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-soscm {
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-icons {
+  font-size: 28px;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.tentang-model-content .tentang-kontribusi-card .kontribusi-icons a {
+  color: #333;
+}
+
+.tentang-quotes {
+  margin: 100px 0;
+}
+.tentang-quotes h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tentang-quotes .quotes-quotes {
+  display: flex;
+  align-items: center;
+  grid-area: top;
+}
+.tentang-quotes span {
+  color: #288E66;
+}
+.tentang-quotes .quotes-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas: "top bottom";
+}
+.tentang-quotes .quotes-img {
+  grid-area: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardslider {
+  background-color: #288E66;
+  height: 600px;
+  border-radius: 0 0 50px 50px;
+  color: #fff;
+  position: relative;
+}
+.cardslider .splide {
+  margin-left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardslider .splide__slide {
+  justify-content: center;
+  display: grid;
+}
+.cardslider .cardslider-title {
+  font-family: "Poppins";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardslider .cardslider-card-title {
+  position: relative;
+  padding: 20px;
+}
+.cardslider .cardslider-card {
+  border-radius: 50px;
+  width: 350px;
+  height: 350px;
+  background-color: #7ccc6c;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.cardslider .cardslider-card h2 {
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardslider .cardslider-card .cardslider-card-imgbox {
+  position: relative;
+}
+.cardslider .cardslider-card .cardslider-card-imgbox img {
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1400px) {
+  .cardslider .cardslider-card {
+    width: 430px;
+    height: 430px;
+  }
+}
+@media (max-width: 1320px) {
+  .tentang-model-content .tentang-kontribusi-card {
+    width: 300px;
+    height: 550px;
+  }
+}
+@media (max-width: 1300px) {
+  .tentang-slider .carousel-textbox {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1200px) {
+  .cardslider .cardslider-card {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 992px) {
+  .cardslider {
+    height: auto;
+    padding: 60px 40px;
+  }
+  .cardslider .container {
+    max-width: 1320px;
+  }
+  .cardslider .cardslider-title {
+    padding-bottom: 50px;
+  }
+  .cardslider .cardslider-card {
+    width: 330px;
+    height: 330px;
+  }
+  .cardslider .splide {
+    margin: 0;
+  }
+  .cardslider .br {
+    display: none;
+  }
+  .cardslider .container {
+    height: auto !important;
+  }
+  .cardslider .row {
+    height: auto !important;
+  }
+  .cardslider .cardslider-title {
+    position: relative;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .tentang-visimisi .container {
+    max-width: 1020px;
+  }
+  .tentang-visimisi .card {
+    width: 304px;
+  }
+  .tentang-visimisi .card h5 {
+    font-size: 20px;
+  }
+  .tentang-visimisi .card p {
+    font-size: 18px;
+  }
+
+  .tentang-slider {
+    padding-top: 1100px;
+  }
+  .tentang-slider .carousel-textbox {
+    font-size: 18px;
+  }
+  .tentang-slider .carousel-imgbox {
+    margin-bottom: 3rem;
+  }
+  .tentang-slider .carousel-imgbox img {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .tentang-slider .tentang-slider-item .rowslider {
+    grid-template-columns: 1fr;
+    grid-template-areas: "imgbox" "textbox" !important;
+  }
+
+  .tentang-kontribusi {
+    height: 780px;
+  }
+  .tentang-kontribusi .tentang-kontribusi-btn {
+    height: 80%;
+  }
+  .tentang-kontribusi .tentang-kontribusi-inner {
+    height: 80%;
+  }
+  .tentang-kontribusi .tentang-kontribusi-footerbtn {
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+  .tentang-kontribusi .tentang-kontribusi-footerbtn .btn {
+    padding: 10px 20px;
+    color: #000;
+    background-color: #fff;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: none;
+  }
+  .tentang-kontribusi .tentang-kontribusi-footerbtn .btn:hover {
+    background-color: #e6e6e6;
+  }
+
+  .tentang-quotes .quotes-grid {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    grid-template-areas: "bottom" "top";
+  }
+  .tentang-quotes .quotes-quotes h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .tentang-slider {
+    min-height: 800px;
+    height: auto;
+  }
+  .tentang-slider .carousel-textbox {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .tentang-slider .carousel-imgbox {
+    position: relative;
+  }
+  .tentang-slider .carousel-imgbox img {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .tentang-model-content .modal-body {
+    padding: 0;
+  }
+  .tentang-model-content .modal-kontribusi-inner {
+    margin: 0;
+  }
+}
+@media (max-width: 576px) {
+  .cardslider .cardslider-title {
+    line-height: 28px;
+  }
+  .cardslider .cardslider-card {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+  }
+  .cardslider .cardslider-card h2 {
+    font-size: 13px;
+  }
+
+  .tentang-slider {
+    height: auto;
+    padding-top: 800px;
+  }
+  .tentang-slider .carousel-textbox {
+    font-size: 11px;
+    line-height: normal;
+  }
+  .tentang-slider .carousel-textbox h1 {
+    font-size: 1.5rem;
+  }
+
+  .splide__kontribusi__list .splide__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tentang-kontribusi .tentang-kontribusi-headtitle h1 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 522px) {
+  .tentang-quotes .quotes-quotes h1 {
+    font-size: 28px;
+  }
+  .tentang-quotes .quotes-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 403px) {
+  .tentang-kontribusi {
+    height: 800px;
+  }
+  .tentang-kontribusi .tentang-kontribusi-inner {
+    height: 75%;
+  }
+}
+@media (max-width: 400px) {
+  .tentang-quotes .quotes-quotes h1 {
+    font-size: 22px;
+    line-height: normal;
+  }
+  .tentang-quotes .quotes-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .cardslider .cardslider-title {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=tentang.css.map */

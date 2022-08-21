@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css" />
+
+  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="../assets/css/tentang.css" />
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg main-nav">
+    <div class="container h-100">
+      <div class="nav-brand">
+        <div class="row">
+          <div class="col-3 col-lg-3">
+            <div class="imgbox">
+              <img src="../assets/img/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="namebox text-left">Tanpabatas Group</div>
+          </div>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Tentang</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Jasa
+            </a>
+            <div class="dropdown-menu dd-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item underline" href="#">Reparasi Laptop/PC</a>
+              <a class="dropdown-item" href="#">Pembuatan Web</a>
+              <a class="dropdown-item" href="#">Pembuatan Aplikasi Mobile</a>
+              <a class="dropdown-item" href="#">Pembuatan UI/UX</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Karir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Hubungi Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gabung</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="pages page-tentang">
+    <div class="tentang-slider">
+      <div class="container">
+        <div class="tentang-slider-btns d-none d-lg-block">
+          <button class="slider-button-prev" id="sliderPrev">
+            <img src="../assets/img/left_arrow.png" alt="" srcset="" />
+          </button>
+          <button class="slider-button-next" id="sliderNext">
+            <img src="../assets/img/arrow.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+
+      <div id="tentang-slider-inner">
+
+        <!-- <div class="tentang-slider-item active">
+          <div class="carousel-content">
+            <div class="container">
+              <div class="row gx-5 mx-auto mb-5">
+                <div class="carousel-textbox">
+                  <div class="texts">
+                    <h1>2022</h1>
+                    <p>Berjalan 2 tahun Tanpabatas mengalami beberapa perubahan dan peningkatan dari struktur
+                      organisasi, hingga sistem pendataan pelanggan. Dikarenakan kami sudah memiliki website dan
+                      berlangganan hosting serta domain kami membuat website database untuk pendataan pelanggan dan
+                      website utama untuk media promosi serta fitur fitur yang berguna bagi pelanggan. Peningkatan yang
+                      terjadi bukan hanya pada sistem saja, tetapi kualitas diri dari tiap tiap individu yang ada di tim
+                      tanpabatas, semua orang yang ada di tim Tanpabatas mengikuti program dari pemerintah yang bernama
+                      Kampus Merdeka, tujuannya adalah untuk mengasah skill dan mendapat sertifikasi.</p>
+                  </div>
+                </div>
+                <div class="carousel-imgbox d-none d-lg-block"><img src="../img/slidergrup.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>   -->
+
+      </div>
+
+      <div id="tentang-slider-paginations"></div>
+    </div>
+
+    <div class="tentang-visimisi">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="visimisi-title mt-5">Visi & Misi</h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card green-card">
+              <div class="card-body">
+                <h5>Kebersamaan</h5>
+
+                <p>
+                  Tim tanpabatas bukan hanya sekedar tim biasa, kami
+                  mempererat hubungan seperti halnya keluarga dekat, agar bisa
+                  tercipta kebersamaan.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card pink-card">
+              <div class="card-body">
+                <h5>Kepercayaan</h5>
+
+                <p>
+                  Tidak hanya hubungan saja yang mengharuskan saling percaya,
+                  sebagai tim kita harus saling percaya satu sama lain
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="card orange-card">
+              <div class="card-body">
+                <h5>Kejujuran</h5>
+
+                <p>
+                  Kami menjunjung tinggi nilai kejujuran, nilai kejujuran
+                  menjadi sebuah kualitas terbaik dalam cita-cita perusahaan
+                  kami
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tentang-kontribusi">
+      <div class="tentang-kontribusi-headtitle d-block d-lg-none">
+        <h1>Orang Berkontribusi</h1>
+      </div>
+      <div class="tentang-kontribusi-overlay"></div>
+      <div class="tentang-kontribusi-btn d-none d-lg-grid">
+        <div class="inner-btn">
+          <h2>Orang<br> Berkontribusi</h2>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Lihat detail
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+
+          <!-- Modal -->
+        </div>
+      </div>
+
+      <div id="innerkontribusi" class="tentang-kontribusi-inner d-flex gx-5">
+
+        <div class="tentang-kontribusi-card">
+          <div class="kontribusi-imgbox">
+            <img src="../assets/img/ahim.png" alt="">
+          </div>
+          <div class="kontribusi-knowme">
+            <div class="kontribusi-name text-center">
+              <h5>Muhamad Farahim</h5>
+            </div>
+            <div class="kontribusi-role text-center">
+              <h6>UI/UX Designer</h6>
+            </div>
+            <div class="kontribusi-desc text-center">
+              <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+            </div>
+            <div class="kontribusi-soscm">
+              <div class="kontribusi-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tentang-kontribusi-card">
+          <div class="kontribusi-imgbox">
+            <img src="../assets/img/ahim.png" alt="">
+          </div>
+          <div class="kontribusi-knowme">
+            <div class="kontribusi-name text-center">
+              <h5>Muhamad Farahim</h5>
+            </div>
+            <div class="kontribusi-role text-center">
+              <h6>UI/UX Designer</h6>
+            </div>
+            <div class="kontribusi-desc text-center">
+              <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+            </div>
+            <div class="kontribusi-soscm">
+              <div class="kontribusi-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tentang-kontribusi-card">
+          <div class="kontribusi-imgbox">
+            <img src="../assets/img/ahim.png" alt="">
+          </div>
+          <div class="kontribusi-knowme">
+            <div class="kontribusi-name text-center">
+              <h5>Muhamad Farahim</h5>
+            </div>
+            <div class="kontribusi-role text-center">
+              <h6>UI/UX Designer</h6>
+            </div>
+            <div class="kontribusi-desc text-center">
+              <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+            </div>
+            <div class="kontribusi-soscm">
+              <div class="kontribusi-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tentang-kontribusi-footerbtn d-flex d-lg-none">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Lihat detail
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="tentang-quotes">
+      <div class="container quotes-grid">
+        <div class="quotes-quotes">
+          <h1>
+            <span>Tanpabatas</span> adalah perusahaan teknologi Indonesia yang
+            mendukung
+            <span>kreatifitas dan inovasi anak bangsa</span>
+          </h1>
+        </div>
+        <div class="quotes-img">
+          <img src="../assets/img/loudmonitor.svg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+
+    <div class="cardslider">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 col-lg-3">
+            <h2 class="cardslider-title">
+              Ada apa aja di <br class="br" />
+              Tanpabatas ?
+            </h2>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list" id="spliderSlider"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gabung">
+      <div class="container">
+        <div class="gabung-box">
+          <div class="row m-2">
+            <div class="col-12 col-md-9 d-flex align-items-center">
+              <div class="">
+                <p>
+                  Dengan kami membawa perubahan besar dalam bidang teknologi.
+                </p>
+
+                <a href="#" class="d-none d-md-inline">Gabung</a>
+
+              </div>
+            </div>
+            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mt-4">
+              <img src="../assets/img/guywithcat.png" alt="" srcset="" />
+            </div>
+            <div class="col-12 d-md-none mt-4">
+              <a href="#" class="d-inline">Gabung</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-client">
+      <div class="container">
+        <div class="d-flex align-items-center p-0 client-text">
+          <h1>Klien <br />Unggulan</h1>
+        </div>
+        <div class="client-carsvert">
+          <div class="vertical-carousels">
+            <div class="splide" id="splideVertCar1">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="vertcar__card">
+                      <div class="vertcar__texts">
+                        <h5>Huobi Club</h5>
+                        <p>Houbi Club, perusahaan yang bergerak di bidang outbound indoor.</p>
+                      </div>
+                      <div class="vertcar__img">
+                        <img src="../assets/img/huobicol.png" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="vertcar__card">
+                      <div class="vertcar__texts">
+                        <h5>PT. Prolabios</h5>
+                        <p>PT Prolabios Mitra Analitika adalah perusahaan yang bergerak di bidang distribusi alat-alat
+                          habis pakai untuk Laboratorium</p>
+                      </div>
+                      <div class="vertcar__img">
+                        <img src="../assets/img/pmacol.png" alt="">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="splide" id="splideVertCar2">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="vertcar__card">
+                      <div class="vertcar__texts">
+                        <h5>FIFGROUP</h5>
+                        <p>FIFGROUP, member of ASTRA Perusahaan Pembiayaan Terpercaya di Indonesia.</p>
+                      </div>
+                      <div class="vertcar__img">
+                        <img src="../assets/img/fifgcol.png" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="vertcar__card">
+                      <div class="vertcar__texts">
+                        <h5>Grand Mulya Bogor</h5>
+                        <p>Grand Mulya Bogor, resort & conventional hotel yang berada di Sukaraja Sentul, Bogor</p>
+                      </div>
+                      <div class="vertcar__img">
+                        <img src="../assets/img/gmbcol.png" alt="">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-footer w-100">
+      <img src="../assets/img/wave.png" class="w-100 top-facingdown" alt="" />
+      <div class="footer-content">
+        <div class="container">
+
+          <div class="footer-body py-5">
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-3">
+                <ul>
+                  <li class="li-title">Perusahaan</li>
+                  <li><a href="#">Tentang</a></li>
+                  <li><a href="#">Karir</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <ul>
+                  <li class="li-title">Jasa</li>
+                  <li><a href="#">Reparasi Laptop/PC</a></li>
+                  <li><a href="#">Pembuatan Website</a></li>
+                  <li><a href="#">Pembuatan Aplikasi Mobile</a></li>
+                  <li><a href="#">Pembuatan UI/UX</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <ul>
+                  <li class="li-title"><a> Hubungi Kami</a></li>
+                  <li><a href="#">Lokasi Kami </a></li>
+                  <li><a href="#">Area Home Service</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <ul>
+                  <li class="li-title">Follow Us</li>
+                  <li class="icon-grid">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      </div>
+                      <div class="col-4">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      </div>
+                      <div class="col-4">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="more-inf">
+                    <span class="more-inf-title">Telepon</span> : 087746983216 <br>
+                    <span class="more-inf-title">Email</span> : <span
+                      class="more-inf-email">cs@tanpabatasgroup.com</span><br>
+                  </li>
+                  <li class="more-inf-addr">
+                    <span>
+                      Jl. Pondok Rumput Gg.Mujaer no.39 Rt2 Rw12 Kelurahan Kebon Pedes Kecamatan Tanah Sareal
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-botfrag">
+              <div class="footer-logo">
+                <div class="d-flex">
+                  <div class="footer-logobox">
+                    <img src="../assets/img/logo.png" alt="">
+                  </div>
+                  <p>Tanpabatas Group</p>
+                </div>
+              </div>
+              <p class="footer-copyright">
+                © 2022 Tanpabatas Group. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered tentang-modal-dialog">
+      <div class="modal-content tentang-model-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modalInnerKontribusi" class="modal-kontribusi-inner gx-5">
+
+            <div class="splide" id="modalKontribusi">
+              <div class="splide__track">
+                <ul class="splide__list splide__kontribusi__list">
+                  <li class="splide__slide">
+                    <div class="tentang-kontribusi-card">
+                      <div class="kontribusi-imgbox">
+                        <img src="../assets/img/ahim.png" alt="">
+                      </div>
+                      <div class="kontribusi-knowme">
+                        <div class="kontribusi-name text-center">
+                          <h5>Muhamad Farahim</h5>
+                        </div>
+                        <div class="kontribusi-role text-center">
+                          <h6>UI/UX Designer</h6>
+                        </div>
+                        <div class="kontribusi-desc text-center">
+                          <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+                        </div>
+                        <div class="kontribusi-soscm">
+                          <div class="kontribusi-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tentang-kontribusi-card">
+                      <div class="kontribusi-imgbox">
+                        <img src="../assets/img/ahim.png" alt="">
+                      </div>
+                      <div class="kontribusi-knowme">
+                        <div class="kontribusi-name text-center">
+                          <h5>Muhamad Farahim</h5>
+                        </div>
+                        <div class="kontribusi-role text-center">
+                          <h6>UI/UX Designer</h6>
+                        </div>
+                        <div class="kontribusi-desc text-center">
+                          <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+                        </div>
+                        <div class="kontribusi-soscm">
+                          <div class="kontribusi-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tentang-kontribusi-card">
+                      <div class="kontribusi-imgbox">
+                        <img src="../assets/img/ahim.png" alt="">
+                      </div>
+                      <div class="kontribusi-knowme">
+                        <div class="kontribusi-name text-center">
+                          <h5>Muhamad Farahim</h5>
+                        </div>
+                        <div class="kontribusi-role text-center">
+                          <h6>UI/UX Designer</h6>
+                        </div>
+                        <div class="kontribusi-desc text-center">
+                          <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+                        </div>
+                        <div class="kontribusi-soscm">
+                          <div class="kontribusi-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tentang-kontribusi-card">
+                      <div class="kontribusi-imgbox">
+                        <img src="../assets/img/ahim.png" alt="">
+                      </div>
+                      <div class="kontribusi-knowme">
+                        <div class="kontribusi-name text-center">
+                          <h5>Muhamad Farahim</h5>
+                        </div>
+                        <div class="kontribusi-role text-center">
+                          <h6>UI/UX Designer</h6>
+                        </div>
+                        <div class="kontribusi-desc text-center">
+                          <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+                        </div>
+                        <div class="kontribusi-soscm">
+                          <div class="kontribusi-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="tentang-kontribusi-card">
+                      <div class="kontribusi-imgbox">
+                        <img src="../assets/img/ahim.png" alt="">
+                      </div>
+                      <div class="kontribusi-knowme">
+                        <div class="kontribusi-name text-center">
+                          <h5>Muhamad Farahim</h5>
+                        </div>
+                        <div class="kontribusi-role text-center">
+                          <h6>UI/UX Designer</h6>
+                        </div>
+                        <div class="kontribusi-desc text-center">
+                          <p>Mahasiswa Universitas Singaperbangsa Kawarang yang menekuni bidang UI/UX Designer</p>
+                        </div>
+                        <div class="kontribusi-soscm">
+                          <div class="kontribusi-icons">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script src="../assets/js/index.js"></script>
+<script type="module" src="../assets/js/slider.js"></script>
+<script type="module" src="../assets/js/tentang.js"></script>
+
+</html>
