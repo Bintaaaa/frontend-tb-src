@@ -1,0 +1,512 @@
+body {
+  background-color: #faebb8;
+}
+body .section1 {
+  padding-top: 100px !important;
+}
+body .bg-1 {
+  background-color: #288e66;
+}
+body .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 76px;
+  color: rgb(255, 255, 255);
+}
+body .jadwal {
+  font-weight: 500;
+  color: #808080;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+body .komputer > img {
+  width: 500px;
+}
+body .btn1 {
+  background-color: #21b237;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+body .btn1:hover {
+  background-color: #19872a;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+}
+body .btn2 {
+  background-color: #288e66;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 20px;
+}
+body .btn-light {
+  font-family: "Poppins", sans-serif;
+  color: #21b237;
+  font-weight: 600;
+  font-size: 20px;
+}
+body .btn-light:hover {
+  color: #21b237;
+}
+body .card {
+  background-color: white;
+  border-radius: 23px;
+}
+body .judul {
+  font-size: 43px;
+  padding-left: 20px;
+}
+body .radio {
+  margin-left: 20px;
+}
+body .radio > label {
+  font-weight: 500;
+  color: #808080;
+}
+body .konfirmasi {
+  margin-left: 20px;
+}
+body .shadoww {
+  box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+}
+body .text-1 {
+  font-size: 16px;
+}
+body .invoicebtn {
+  margin-left: 10px;
+}
+body input[type=time] {
+  border: none;
+  background-color: white;
+  width: 72px;
+  color: #808080;
+}
+body input[type=time]::-webkit-calendar-picker-indicator {
+  color: #808080;
+  opacity: 1;
+  display: block;
+  background: url(/img/jam.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+}
+body input[type=radio]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -5px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid white;
+}
+body input[type=radio]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -5px;
+  left: -1px;
+  position: relative;
+  background-color: #808080;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid white;
+}
+body input[type=date]::-webkit-calendar-picker-indicator {
+  color: #808080;
+  opacity: 1;
+  display: block;
+  background: url(/img/date.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+}
+body input[type=date] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  color: #808080;
+  font-family: "Helvetica", arial, sans-serif;
+  font-size: 18px;
+  border: none;
+  background: white;
+  padding: 5px;
+}
+body input[type=text] {
+  font-size: 18px;
+  font-weight: 500;
+  color: #808080;
+  background-color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #bdbdbd;
+}
+@media (max-width: 768px) {
+  body .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+  body .komputer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 520px) {
+  body .komputer > img {
+    width: 270px !important;
+    margin-top: 20px;
+  }
+  body .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+  }
+}
+@media (max-width: 321px) {
+  body .invoicebtn {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+}
+
+.modal {
+  transition: all 300ms;
+}
+.modal input[type=text],
+.modal input[type=number] {
+  background-color: #fff;
+  margin: 0px;
+  border: none;
+  color: #000;
+  font-family: "Poppins";
+  padding: 10px 20px;
+}
+.modal .btn-close {
+  z-index: 99;
+}
+
+.modal-cekform {
+  max-width: 1100px;
+  width: 95%;
+}
+.modal-cekform .modal-content {
+  height: 500px;
+}
+.modal-cekform .modal-header {
+  border-bottom: none;
+}
+.modal-cekform .btn-close {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.modal-cekform .modal-body {
+  padding: 40px;
+  padding-top: 0;
+}
+.modal-cekform .imgbox,
+.modal-cekform .text-and-inputs {
+  height: 50%;
+  width: 60%;
+  margin: 0 auto;
+}
+.modal-cekform .imgbox {
+  max-width: 431px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+.modal-cekform .imgbox img {
+  width: 90%;
+}
+.modal-cekform .input-invoice {
+  font-size: 20px;
+  height: 55px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 3;
+  border-radius: 25px;
+}
+.modal-cekform .text-and-inputs {
+  height: 50%;
+  width: 60%;
+  margin: 0 auto;
+  max-width: 550px;
+}
+.modal-cekform .text-and-inputs h3 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.modal-cekform .text-and-inputs p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.modal-cekform .text-and-inputs .input-group {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.modal-cekform .text-and-inputs .btn-invoice {
+  background-color: #fff;
+  color: #000;
+  width: 100px;
+  border-radius: 0 25px 0 25px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.modal-invoice-result {
+  width: 90%;
+  max-width: 771px;
+}
+.modal-invoice-result .btn-close {
+  display: none;
+}
+.modal-invoice-result .modal-content {
+  min-height: 520px;
+  border-radius: 50px;
+}
+.modal-invoice-result .modal-header {
+  display: none !important;
+}
+.modal-invoice-result #modal-invoice-content {
+  padding: 10px 40px;
+}
+.modal-invoice-result #modal-invoice-content h2,
+.modal-invoice-result #modal-invoice-content .h2 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+.modal-invoice-result #modal-invoice-content .modal-content {
+  min-height: 520px;
+  border-radius: 50px;
+}
+.modal-invoice-result #modal-invoice-content .modal-header {
+  display: none !important;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content {
+  padding: 10px 40px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content h2,
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .h2 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .h2 {
+  color: #808080;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content h2 {
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .invoice-desc,
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .invoice-output {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .invoice-desc {
+  color: #808080;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .top-sect {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect h2 {
+  margin: 0;
+  text-align: center;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect .bot-sect-ket {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect .bot-sect-pdf {
+  display: grid;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect .pdf-imgbox {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .bot-sect .pdf-imgbox img {
+  width: 50px;
+  height: 69px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .invoice-stamp {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  right: 50px;
+}
+.modal-invoice-result #modal-invoice-content .modal-invoice-content .invoice-stamp.cancelled {
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 210px;
+}
+.modal-invoice-result #modal-cekform-loading {
+  height: 100%;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-invoice-result #modal-cekform-loading .spinner-border {
+  width: 8rem;
+  height: 8rem;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-right-color: transparent;
+}
+@media (max-width: 768px) {
+  .modal-invoice-result .top-sect {
+    grid-template-areas: "namateknisi" "namateknisi-output" "masagaransi" "masagaransi-output" "tanggalselesai" "tanggalselesai-output";
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content {
+    position: relative;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .invoice-output {
+    margin-bottom: 25px;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .invoice-desc {
+    margin-bottom: 10px;
+  }
+  .modal-invoice-result #namateknisi {
+    grid-area: namateknisi;
+  }
+  .modal-invoice-result #namateknisi-output {
+    grid-area: namateknisi-output;
+  }
+  .modal-invoice-result #masagaransi {
+    grid-area: masagaransi;
+  }
+  .modal-invoice-result #masagaransi-output {
+    grid-area: masagaransi-output;
+  }
+  .modal-invoice-result #tanggalselesai {
+    grid-area: tanggalselesai;
+  }
+  .modal-invoice-result #tanggalselesai-output {
+    grid-area: tanggalselesai-output;
+  }
+  .modal-invoice-result .bot-sect .bot-sect-ket {
+    grid-template-areas: "perankat" "perankat-output" "keluhan" "keluhan-output" "status" "status-output";
+  }
+  .modal-invoice-result #perankat {
+    grid-area: perankat;
+  }
+  .modal-invoice-result #perankat-output {
+    grid-area: perankat-output;
+  }
+  .modal-invoice-result #keluhan {
+    grid-area: keluhan;
+  }
+  .modal-invoice-result #keluhan-output {
+    grid-area: keluhan-output;
+  }
+  .modal-invoice-result #status {
+    grid-area: status;
+  }
+  .modal-invoice-result #status-output {
+    grid-area: status-output;
+  }
+  .modal-invoice-result .komputer > img {
+    padding-top: 20px;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .bot-sect {
+    grid-template-columns: 1fr;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .bot-sect h2 {
+    text-align: left;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .bot-sect .bot-sect-ket {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .modal-invoice-result .modal-invoice-result .modal-invoice-content .bot-sect .pdf-imgbox {
+    width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-cekform .modal-content {
+    height: 600px;
+  }
+  .modal-cekform .text-and-inputs .btn-invoice-sm {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 25px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .modal-invoice-result #modal-invoice-content h2,
+.modal-invoice-result #modal-invoice-content .h2 {
+    position: relative;
+    z-index: 2;
+  }
+  .modal-invoice-result #modal-invoice-content .judul {
+    font-size: 37px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .modal-invoice-result .modal-invoice-content h2,
+.modal-invoice-result .modal-invoice-content .h2 {
+    position: relative;
+    z-index: 2;
+  }
+  .modal-invoice-result .modal-invoice-content .invoice-stamp {
+    opacity: 0.5;
+    top: 300px;
+    z-index: 1;
+  }
+}
+@media (max-width: 500px) and (max-width: 400px) {
+  .modal-cekform .imgbox {
+    min-height: 100px;
+  }
+  .modal-cekform .modal-content {
+    height: 600px;
+  }
+}/*# sourceMappingURL=reservasi.css.map */

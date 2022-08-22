@@ -1,0 +1,33 @@
+.section1 {
+  padding-top: 100px;
+}
+.bg-1 {
+  background-color: #288e66;
+  padding-bottom: 150px;
+}
+.text-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: white;
+}
+.btn:hover {
+  color: white;
+  background-color: #288e66;
+}
+.btn-linkk {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #ff8f1c;
+  background-color: white;
+}
+
+.gabung {
+  height: 200px;
+}
+
+.gabung-box {
+  transform: translateY(-300px);
+}

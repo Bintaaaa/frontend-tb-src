@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/reservasi.css" xx />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg main-nav">
+      <div class="container h-100">
+        <div class="nav-brand">
+          <div class="row">
+            <div class="col-3 col-lg-3">
+              <div class="imgbox">
+                <img src="../assets/img/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="namebox text-left">Tanpabatas Group</div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Jasa
+              </a>
+              <div
+                class="dropdown-menu dd-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item underline" href="#"
+                  >Reparasi Laptop/PC</a
+                >
+                <a class="dropdown-item" href="#">Pembuatan Web</a>
+                <a class="dropdown-item" href="#">Pembuatan Aplikasi Mobile</a>
+                <a class="dropdown-item" href="#">Pembuatan UI/UX</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Karir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gabung</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="section1 bg-1 pt-3">
+      <div class="container-fluid">
+        <div class="container">
+          <h1 class="title">
+            Apapun masalahnya, <br />
+            apapun kerusakannya, <br />
+            mudah di genggaman kami
+          </h1>
+          <div class="row">
+            <div class="container">
+              <div class="button mt-5">
+                <a href="#formres" class="btn btn1">Reservasi</a>
+                <button
+                  class="btn btn-light invoicebtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#invoiceModal"
+                >
+                  Cek Invoice
+                </button>
+              </div>
+              <div class="komputer text-end mb-3">
+                <img
+                  src="../assets/img/komputer.svg"
+                  alt=""
+                  class="justify-content-end"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="formres" class="section2 mb-5 mt-5">
+      <div class="container card shadoww">
+        <div class="container1 mx-lg-4">
+          <h1 class="judul mt-5">Form pengisian reservasi</h1>
+          <div class="form">
+            <form action="">
+              <input type="text" placeholder="Nama" class="col-lg-4 mt-5" />
+              <br />
+              <input
+                type="text"
+                placeholder="Nomor Telepon"
+                class="col-lg-4 mt-5"
+              />
+              <br />
+              <input type="text" placeholder="Email" class="col-lg-4 mt-5" />
+              <br />
+              <input type="text" placeholder="Keluhan" class="col-lg-4 mt-5" />
+              <br />
+              <h2 class="mt-4 jadwal">Jadwal Reservasi</h2>
+              <input type="date" class="mx-3" name="tanggal" id="" />
+              <input type="time" name="jam" id="" class="time" />
+              <br />
+              <div class="radio align-items-center mt-4">
+                <input type="radio" name="layanan" id="langsung" />
+                <label for="langsung" class="mx-2">Datang Langsung</label>
+                <input type="radio" name="layanan" id="rumah" />
+                <label for="rumah" class="mx-2">Pelayanan Rumah</label>
+              </div>
+              <div class="konfirmasi d-flex align-items-center">
+                <input
+                  type="checkbox"
+                  name="konfirmasi"
+                  id="konfirmasi"
+                  class="mb-3"
+                />
+                <p class="mt-4 mx-3 text-1">
+                  Dengan ini saya setuju, jika melewati batas waktu 1 jam dari
+                  reservasi,<br />
+                  maka harus reservasi ulang.
+                </p>
+              </div>
+              <button class="btn2 btn px-4 rounded-4 mt-4 mb-5">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="invoiceModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        id="invoice-dialog"
+        class="modal-dialog modal-dialog-centered modal-cekform"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="modal-cekform-content">
+              <div class="imgbox">
+                <img src="../assets/img/laptopt.png" alt="" srcset="" />
+              </div>
+              <div class="text-and-inputs">
+                <h3>Cari Status Pengerjaan, Cetak Invoice & Cek Garansi</h3>
+                <p>Masukan Invoice dibawah</p>
+                <form id="invoice-form" class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control input-invoice"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-invoice d-none d-sm-block"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    Enter
+                  </button>
+                </form>
+                <button
+                  class="btn btn-invoice btn-invoice-sm d-block d-sm-none"
+                  type="submit"
+                >
+                  Enter
+                </button>
+              </div>
+            </div>
+            <div class="d-none" id="modal-cekform-loading">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <div
+              id="modal-invoice-content"
+              class="modal-invoice-content d-none"
+            >
+              <h2>Status</h2>
+              <div class="top-sect">
+                <div id="namateknisi" class="invoice-desc">Nama Teknisi:</div>
+                <div id="namateknisi-output" class="invoice-output">
+                  Bukhori Bukhori Bin Bukhori
+                </div>
+                <div id="masagaransi" class="invoice-desc">Masa Garansi:</div>
+                <div id="masagaransi-output" class="invoice-output">
+                  Cek Setelah Selesai
+                </div>
+                <div id="tanggalselesai" class="invoice-desc">
+                  Tanggal Selesai:
+                </div>
+                <div id="tanggalselesai-output" class="invoice-output">-</div>
+              </div>
+              <hr />
+              <div class="h2">Nomor invoice</div>
+              <h2>123123123123123</h2>
+              <hr />
+              <div class="bot-sect">
+                <div class="bot-sect-ket">
+                  <div id="perankat" class="invoice-desc">Perangkat:</div>
+                  <div id="perankat-output" class="invoice-output">
+                    Lenovo Thinkpad
+                  </div>
+                  <div id="keluhan" class="invoice-desc">Keluhan:</div>
+                  <div id="keluhan-output" class="invoice-output">
+                    Ganti LCD
+                  </div>
+                  <div id="status" class="invoice-desc">Status:</div>
+                  <div id="status-output" class="invoice-output">
+                    Dalam Proses Pembelian Sparepart
+                  </div>
+                </div>
+                <div class="bot-sect-pdf">
+                  <h2>Cetak Invoice</h2>
+                  <a href="#"
+                    ><div class="pdf-imgbox">
+                      <img src="../assets/img/pdf.svg" alt="" srcset="" /></div
+                  ></a>
+                </div>
+              </div>
+              <img id="stamp" class="invoice-stamp d-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-footer w-100">
+        <img src="../assets/img/wave.png" class="w-100 top-facingdown" alt="" />
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-body py-5">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Perusahaan</li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Karir</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Jasa</li>
+                    <li><a href="#">Reparasi Laptop/PC</a></li>
+                    <li><a href="#">Pembuatan Website</a></li>
+                    <li><a href="#">Pembuatan Aplikasi Mobile</a></li>
+                    <li><a href="#">Pembuatan UI/UX</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title"><a> Hubungi Kami</a></li>
+                    <li><a href="#">Lokasi Kami </a></li>
+                    <li><a href="#">Area Home Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Follow Us</li>
+                    <li class="icon-grid">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="more-inf">
+                      <span class="more-inf-title">Telepon</span> : 087746983216
+                      <br />
+                      <span class="more-inf-title">Email</span> :
+                      <span class="more-inf-email">cs@tanpabatasgroup.com</span
+                      ><br />
+                    </li>
+                    <li class="more-inf-addr">
+                      <span>
+                        Jl. Pondok Rumput Gg.Mujaer no.39 Rt2 Rw12 Kelurahan
+                        Kebon Pedes Kecamatan Tanah Sareal
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-botfrag">
+                <div class="footer-logo">
+                  <div class="d-flex">
+                    <div class="footer-logobox">
+                      <img src="../assets/img/logo.png" alt="" />
+                    </div>
+                    <p>Tanpabatas Group</p>
+                  </div>
+                </div>
+                <p class="footer-copyright">
+                  © 2022 Tanpabatas Group. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../assets/js/reservasi.js"></script>
+  <script src="../assets/js/index.js"></script>
+</html>

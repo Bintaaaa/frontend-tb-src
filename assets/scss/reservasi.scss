@@ -1,0 +1,589 @@
+body {
+  background-color: #faebb8;
+  .section1 {
+    padding-top: 100px !important;
+  }
+  .bg-1 {
+    background-color: #288e66;
+  }
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 76px;
+    color: rgb(255, 255, 255);
+  }
+
+  .jadwal {
+    font-weight: 500;
+    color: #808080;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .komputer > img {
+    width: 500px;
+  }
+  .btn1 {
+    background-color: #21b237;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+      background-color: darken($color: #21b237, $amount: 10);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      border: none;
+    }
+  }
+
+  .btn2 {
+    background-color: #288e66;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .btn-light {
+    font-family: "Poppins", sans-serif;
+    color: #21b237;
+    font-weight: 600;
+    font-size: 20px;
+    &:hover {
+      color: #21b237;
+    }
+  }
+  .card {
+    background-color: white;
+    border-radius: 23px;
+  }
+  .judul {
+    font-size: 43px;
+    padding-left: 20px;
+  }
+  .radio {
+    margin-left: 20px;
+  }
+  .radio > label {
+    font-weight: 500;
+    color: #808080;
+  }
+
+  .konfirmasi {
+    margin-left: 20px;
+  }
+  .shadoww {
+    box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 9px 8px 19px 7px rgba(0, 0, 0, 0.17);
+  }
+  .text-1 {
+    font-size: 16px;
+  }
+  .invoicebtn {
+    margin-left: 10px;
+  }
+  input[type="time"] {
+    border: none;
+    background-color: white;
+    width: 72px;
+    color: #808080;
+  }
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    color: #808080;
+    opacity: 1;
+    display: block;
+    background: url(/img/jam.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+  input[type="radio"]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+  }
+
+  input[type="radio"]:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -5px;
+    left: -1px;
+    position: relative;
+    background-color: #808080;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid white;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #808080;
+    opacity: 1;
+    display: block;
+    background: url(/img/date.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #808080;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border: none;
+    background: white;
+    padding: 5px;
+  }
+  input[type="text"] {
+    font-size: 18px;
+    font-weight: 500;
+    color: #808080;
+    background-color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #bdbdbd;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 50px;
+      color: rgb(255, 255, 255);
+    }
+    .komputer {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 520px) {
+    .komputer > img {
+      width: 270px !important;
+      margin-top: 20px;
+    }
+    .title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+    }
+  }
+  @media (max-width: 321px) {
+    .invoicebtn {
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+  }
+}
+
+.modal {
+  transition: all 300ms;
+  input[type="text"],
+  input[type="number"] {
+    background-color: #fff;
+    margin: 0px;
+    border: none;
+    color: #000;
+    font-family: "Poppins";
+    padding: 10px 20px;
+  }
+
+  .btn-close {
+    z-index: 99;
+  }
+}
+
+.modal-cekform {
+  max-width: 1100px;
+  width: 95%;
+
+  .modal-content {
+    height: 500px;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .modal-body {
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .imgbox,
+  .text-and-inputs {
+    height: 50%;
+    width: 60%;
+
+    margin: 0 auto;
+  }
+
+  .imgbox {
+    max-width: 431px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    img {
+      width: 90%;
+    }
+  }
+  .input-invoice {
+    font-size: 20px;
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 3;
+    border-radius: 25px;
+  }
+  .text-and-inputs {
+    height: 50%;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 550px;
+    // display: grid;
+    // justify-content: center;
+
+    h3 {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 33px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .input-group {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .btn-invoice {
+      background-color: #fff;
+      color: #000;
+      width: 100px;
+      border-radius: 0 25px 0 25px;
+
+      font-family: "Inter";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.modal-invoice-result {
+  width: 90%;
+  max-width: 771px;
+  .btn-close {
+    display: none;
+  }
+
+  .modal-content {
+    min-height: 520px;
+    border-radius: 50px;
+  }
+  .modal-header {
+    display: none !important;
+  }
+
+  #modal-invoice-content {
+    padding: 10px 40px;
+
+    h2,
+    .h2 {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .modal-content {
+      min-height: 520px;
+      border-radius: 50px;
+    }
+    .modal-header {
+      display: none !important;
+    }
+
+    .modal-invoice-content {
+      padding: 10px 40px;
+
+      h2,
+      .h2 {
+        font-family: "Poppins";
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+      }
+
+      .h2 {
+        color: #808080;
+        margin-top: 30px;
+        margin-bottom: 12px;
+      }
+
+      h2 {
+        margin-top: 12px;
+        margin-bottom: 30px;
+      }
+
+      .invoice-desc,
+      .invoice-output {
+        font-family: "Poppins";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 15px;
+      }
+
+      .invoice-desc {
+        color: #808080;
+      }
+
+      .top-sect {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      .bot-sect {
+        display: grid;
+        grid-template-columns: 3fr 1.2fr;
+
+        h2 {
+          margin: 0;
+          text-align: center;
+        }
+
+        .bot-sect-ket {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+        }
+        .bot-sect-pdf {
+          display: grid;
+        }
+        .pdf-imgbox {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 50px;
+            height: 69px;
+          }
+        }
+      }
+      .invoice-stamp {
+        position: absolute;
+        width: 200px;
+        top: 0;
+        right: 50px;
+
+        &.cancelled {
+          top: 25%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 210px;
+        }
+      }
+    }
+  }
+
+  #modal-cekform-loading {
+    height: 100%;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner-border {
+      width: 8rem;
+      height: 8rem;
+
+      border-color: rgba($color: #000000, $alpha: 0.3);
+      border-right-color: transparent;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .top-sect {
+      grid-template-areas:
+        "namateknisi"
+        "namateknisi-output"
+        "masagaransi"
+        "masagaransi-output"
+        "tanggalselesai"
+        "tanggalselesai-output";
+    }
+
+    .modal-invoice-result {
+      .modal-invoice-content {
+        position: relative;
+        .invoice-output {
+          margin-bottom: 25px;
+        }
+        .invoice-desc {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    #namateknisi {
+      grid-area: namateknisi;
+    }
+    #namateknisi-output {
+      grid-area: namateknisi-output;
+    }
+
+    #masagaransi {
+      grid-area: masagaransi;
+    }
+    #masagaransi-output {
+      grid-area: masagaransi-output;
+    }
+
+    #tanggalselesai {
+      grid-area: tanggalselesai;
+    }
+    #tanggalselesai-output {
+      grid-area: tanggalselesai-output;
+    }
+
+    .bot-sect {
+      .bot-sect-ket {
+        grid-template-areas:
+          "perankat"
+          "perankat-output"
+          "keluhan"
+          "keluhan-output"
+          "status"
+          "status-output";
+      }
+    }
+
+    #perankat {
+      grid-area: perankat;
+    }
+    #perankat-output {
+      grid-area: perankat-output;
+    }
+
+    #keluhan {
+      grid-area: keluhan;
+    }
+    #keluhan-output {
+      grid-area: keluhan-output;
+    }
+
+    #status {
+      grid-area: status;
+    }
+    #status-output {
+      grid-area: status-output;
+    }
+    .komputer > img {
+      padding-top: 20px;
+    }
+    .modal-invoice-result .modal-invoice-content .bot-sect {
+      grid-template-columns: 1fr;
+      h2 {
+        text-align: left;
+      }
+      .bot-sect-ket {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      .pdf-imgbox {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-cekform {
+    .modal-content {
+      height: 600px;
+    }
+
+    .text-and-inputs {
+      .btn-invoice-sm {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 25px;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .modal-invoice-result #modal-invoice-content {
+    h2,
+    .h2 {
+      position: relative;
+      z-index: 2;
+    }
+
+    .judul {
+      font-size: 37px;
+      padding-left: 20px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .modal-invoice-result .modal-invoice-content {
+      h2,
+      .h2 {
+        position: relative;
+        z-index: 2;
+      }
+      .invoice-stamp {
+        opacity: 0.5;
+        top: 300px;
+        z-index: 1;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .modal-cekform {
+      .imgbox {
+        min-height: 100px;
+      }
+      .modal-content {
+        height: 600px;
+      }
+    }
+  }
+}

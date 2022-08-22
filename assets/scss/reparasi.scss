@@ -1,0 +1,1072 @@
+$color1: #dcdcdc;
+$color2: #808080;
+
+body {
+  .section1 {
+    padding-top: 100px !important;
+  }
+  .bg-1 {
+    background-color: #288e66;
+  }
+  .bg-2 {
+    background-color: #faebb8;
+  }
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 76px;
+    color: rgb(255, 255, 255);
+  }
+  .btn:hover {
+    border: none;
+  }
+  .btn1 {
+    background-color: #21b237;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover {
+      background-color: darken($color: #21b237, $amount: 10);
+      color: white;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  .btn2 {
+    padding: 12px;
+    background-color: #288e66;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-weight: 20px;
+    &:hover {
+      background-color: #288e66;
+      color: white;
+    }
+  }
+  .btn-light {
+    font-family: "Poppins", sans-serif;
+    color: #21b237;
+    font-weight: 600;
+    font-size: 20px;
+    &:hover {
+      color: #21b237;
+    }
+  }
+
+  .komputer > img {
+    width: 500px;
+  }
+
+  .rumah {
+    width: 732px;
+  }
+
+  .section2 {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  .text-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #392929;
+  }
+  .text-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #392929;
+  }
+
+  .text-3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+  }
+
+  .text-4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+  }
+
+  .text-5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+  }
+
+  .text-6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #392929;
+  }
+
+  .text-7 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #4f4f4f;
+  }
+
+  .text-8 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4f4f4f;
+    text-align: center;
+  }
+  .text-9 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4f4f4f;
+  }
+
+  .p {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+
+  .p2 {
+    font-weight: 600;
+  }
+
+  .reservasi {
+    padding-top: 50px;
+  }
+
+  .arrow-down > img {
+    transform: translateY(-110px);
+  }
+  .waves > img {
+    width: 100%;
+  }
+
+  .section5 {
+    padding-bottom: 200px;
+  }
+
+  .invoicebtn {
+    margin-left: 10px;
+    color: #21b237;
+
+    &:hover {
+      color: #21b237;
+    }
+  }
+
+  .reservasiborder {
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  @media (min-width: 1399.98px) {
+    .image-2 > img {
+      display: none;
+    }
+    .image-3 > img {
+      display: none;
+    }
+    .image-4 > img {
+      display: none;
+    }
+  }
+  @media (min-width: 767.98px) {
+    .mobile {
+      display: none;
+    }
+  }
+  @media (max-width: 1399.98px) {
+    .reservasi > img {
+      width: 500px;
+    }
+    .laptop > img {
+      width: 500px;
+    }
+    .image-1 > img {
+      display: none;
+    }
+    .image-2 > img {
+      display: block;
+    }
+    .image-3 > img {
+      display: none;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .reservasi > img {
+      width: 400px;
+      margin-bottom: 70px;
+    }
+    .laptop > img {
+      width: 400px;
+    }
+    .image-1 > img {
+      display: none;
+    }
+    .image-2 > img {
+      display: none;
+    }
+    .image-3 > img {
+      display: block;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .alur > img {
+      width: 50px;
+      margin-right: 10px;
+    }
+    .rumah > img {
+      width: 400px;
+    }
+    .komputer > img {
+      padding-top: 20px;
+    }
+
+    .title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 53px;
+      color: rgb(255, 255, 255);
+    }
+    .image-1 > img {
+      display: none;
+    }
+    .image-2 > img {
+      display: none;
+    }
+    .image-3 > img {
+      display: none;
+    }
+    .image-4 > img {
+      height: 700px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .arrow > img {
+      display: none;
+    }
+    .title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 30px;
+      color: rgb(255, 255, 255);
+    }
+
+    .text-1 {
+      font-size: 15px;
+    }
+
+    .text-2 {
+      font-size: 30px;
+    }
+
+    .text-7 {
+      font-size: 20px;
+    }
+
+    .text-8 {
+      font-size: 17px;
+    }
+
+    .komputer > img {
+      width: 300px;
+      margin-top: 20px;
+    }
+    .section2 {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+    .laptop > img {
+      width: 300px;
+      margin-top: 30px;
+    }
+    .reservasi {
+      padding-top: 50px;
+    }
+    .reservasi > img {
+      width: 300px;
+    }
+
+    .logo {
+      padding-top: 50px;
+    }
+    .logoo > img {
+      width: 50px;
+    }
+
+    .arrow > img {
+      width: 70px;
+    }
+
+    .rumah > img {
+      width: 350px;
+    }
+    .p {
+      font-size: 17px;
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 320px) {
+    .invoicebtn {
+      margin-top: 15px;
+      margin-left: 0px;
+    }
+    .komputer > img {
+      width: 280px;
+    }
+    .laptop > img {
+      width: 280px;
+    }
+    .reservasi > img {
+      width: 280px;
+    }
+    .rumah > img {
+      width: 280px;
+    }
+  }
+}
+
+.modal {
+  transition: all 300ms;
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"] {
+    background-color: #fff;
+    margin: 0px;
+    border: none;
+    color: #000;
+    font-family: "Poppins";
+    padding: 10px 20px;
+  }
+
+  .btn-close {
+    z-index: 99;
+  }
+}
+
+.modal-cekform {
+  max-width: 1100px;
+  width: 95%;
+
+  .modal-content {
+    height: 500px;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+
+  .modal-body {
+    padding: 40px;
+    padding-top: 0;
+  }
+
+  .imgbox,
+  .text-and-inputs {
+    height: 50%;
+    width: 60%;
+
+    margin: 0 auto;
+  }
+
+  .imgbox {
+    max-width: 431px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    img {
+      width: 90%;
+    }
+  }
+  .input-invoice {
+    font-size: 20px;
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 3;
+    border-radius: 25px;
+  }
+  .text-and-inputs {
+    height: 50%;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 550px;
+    // display: grid;
+    // justify-content: center;
+
+    h3 {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 33px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    p {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+
+    .input-group {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .btn-invoice {
+      background-color: #fff;
+      color: #000;
+      width: 100px;
+      border-radius: 0 25px 0 25px;
+
+      font-family: "Inter";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 19px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.modal-invoice-result {
+  width: 90%;
+  max-width: 771px;
+  .btn-close {
+    display: none;
+  }
+
+  .modal-content {
+    min-height: 520px;
+    border-radius: 50px;
+  }
+  .modal-header {
+    display: none !important;
+  }
+
+  .modal-invoice-content {
+    padding: 10px 40px;
+    h2,
+    .h2 {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .modal-content {
+      min-height: 520px;
+      border-radius: 50px;
+    }
+    .modal-header {
+      display: none !important;
+    }
+
+    padding: 10px 40px;
+
+    h2,
+    .h2 {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .h2 {
+      color: #808080;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+
+    .invoice-desc,
+    .invoice-output {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    .invoice-desc {
+      color: #808080;
+    }
+
+    .top-sect {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .bot-sect {
+      display: grid;
+      grid-template-columns: 3fr 1.2fr;
+
+      h2 {
+        margin: 0;
+        text-align: center;
+      }
+
+      .bot-sect-ket {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+      .bot-sect-pdf {
+        display: grid;
+      }
+      .pdf-imgbox {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 50px;
+          height: 69px;
+        }
+      }
+    }
+    .invoice-stamp {
+      position: absolute;
+      width: 200px;
+      top: 0;
+      right: 50px;
+      opacity: 0.35;
+
+      &.cancelled {
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 210px;
+      }
+    }
+  }
+}
+#modal-cekform-loading {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .spinner-border {
+    width: 8rem;
+    height: 8rem;
+
+    border-color: rgba($color: #000000, $alpha: 0.3);
+    border-right-color: transparent;
+  }
+}
+
+.modal-reservasi-form {
+  width: 95%;
+  max-width: 715px;
+
+  .modal-body {
+    height: 100%;
+  }
+  form {
+    margin-top: 45px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"] {
+    border-bottom: 1px solid #bdbdbd;
+    border-radius: 0;
+    width: 95%;
+    max-width: 350px;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 32px;
+    padding: 8.5px 0;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .radio-grid {
+    display: flex;
+    gap: 10px;
+
+    .radio {
+      margin: 0.5rem 0;
+      display: flex;
+      input[type="radio"] {
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 1;
+        display: none;
+        + .radio-label {
+          display: grid;
+          grid-template-columns: 1fr 6fr;
+          &:before {
+            content: "";
+            background: $color1;
+            border-radius: 100%;
+            border: 1px solid darken($color1, 25%);
+            display: block;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 250ms ease;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        &:checked {
+          + .radio-label {
+            &:before {
+              background-color: $color2;
+              box-shadow: inset 0 0 0 4px $color1;
+            }
+          }
+        }
+        &:focus {
+          + .radio-label {
+            &:before {
+              outline: none;
+              border-color: $color2;
+            }
+          }
+        }
+        &:disabled {
+          + .radio-label {
+            &:before {
+              box-shadow: inset 0 0 0 4px #000;
+              border-color: darken($color1, 25%);
+              background: darken($color1, 25%);
+            }
+          }
+        }
+        + .radio-label {
+          &:empty {
+            &:before {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .date-time-group {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 32px;
+    column-gap: 37px;
+    input[type="date"] {
+      width: 140px;
+      padding-top: 0;
+      color: #828282;
+    }
+    input[type="time"] {
+      width: 80px;
+      padding-top: 0;
+      color: #828282;
+    }
+
+    .active {
+      color: #000 !important;
+    }
+  }
+
+  .radio-label {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+  }
+
+  label {
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+  }
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+
+  .checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 19fr;
+    margin-top: 44px;
+  }
+
+  .checkbox-label {
+    font-family: "Poppins";
+    display: inline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4f4f4f;
+  }
+
+  .modal-content {
+    padding: 40px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    min-height: 300px;
+    position: relative;
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 50px;
+    font-size: 25px;
+  }
+
+  h2 {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-size: 1.5;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .main-button {
+    height: 80px;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    button {
+      width: 127px;
+      height: 45px;
+      border-radius: 16px;
+      background-color: #21b237;
+      border: none;
+      color: #fff;
+
+      font-family: "Lato";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.modal-reservasi-loading {
+  #modal-reservasi-loading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    height: 560px;
+    width: 560px;
+    border-radius: 50px;
+  }
+
+  .spinner-border {
+    width: 8rem;
+    height: 8rem;
+
+    border-color: rgba($color: #000000, $alpha: 0.3);
+    border-right-color: transparent;
+  }
+
+  .btn-close {
+    display: none;
+  }
+}
+
+.modal-reservasi-wa {
+  #modal-reservasi-wa {
+    position: relative;
+    height: 100%;
+  }
+  .btn-close {
+    display: none;
+  }
+  .modal-content {
+    width: 560px;
+    min-height: 560px;
+    border-radius: 50px;
+    padding: 50px 41px;
+    padding-bottom: 40px;
+  }
+  .modal-body {
+    padding: 0;
+  }
+
+  .waimg {
+    width: 116px;
+    height: 116px;
+
+    position: relative;
+    margin-top: 65px;
+    margin-bottom: 51px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h2 {
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 95px;
+  }
+  p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  a {
+    padding: 0.5em 2em;
+    background-color: lightgreen;
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transform: translateX(-50%);
+
+    color: #fff;
+    text-decoration: none;
+
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    img {
+      height: 26px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top-sect {
+    grid-template-areas:
+      "namateknisi"
+      "namateknisi-output"
+      "masagaransi"
+      "masagaransi-output"
+      "tanggalselesai"
+      "tanggalselesai-output";
+  }
+
+  .modal-invoice-result {
+    .modal-invoice-content {
+      position: relative;
+      .invoice-output {
+        margin-bottom: 25px;
+      }
+      .invoice-desc {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #namateknisi {
+    grid-area: namateknisi;
+  }
+  #namateknisi-output {
+    grid-area: namateknisi-output;
+  }
+
+  #masagaransi {
+    grid-area: masagaransi;
+  }
+  #masagaransi-output {
+    grid-area: masagaransi-output;
+  }
+
+  #tanggalselesai {
+    grid-area: tanggalselesai;
+  }
+  #tanggalselesai-output {
+    grid-area: tanggalselesai-output;
+  }
+
+  .bot-sect {
+    .bot-sect-ket {
+      grid-template-areas:
+        "perankat"
+        "perankat-output"
+        "keluhan"
+        "keluhan-output"
+        "status"
+        "status-output";
+    }
+  }
+
+  #perankat {
+    grid-area: perankat;
+  }
+  #perankat-output {
+    grid-area: perankat-output;
+  }
+
+  #keluhan {
+    grid-area: keluhan;
+  }
+  #keluhan-output {
+    grid-area: keluhan-output;
+  }
+
+  #status {
+    grid-area: status;
+  }
+  #status-output {
+    grid-area: status-output;
+  }
+
+  .modal-invoice-result .modal-invoice-content .bot-sect {
+    grid-template-columns: 1fr;
+    h2 {
+      text-align: left;
+    }
+    .bot-sect-ket {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .pdf-imgbox {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-cekform {
+    .modal-content {
+      height: 600px;
+    }
+
+    .text-and-inputs {
+      .btn-invoice-sm {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 25px;
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .modal-invoice-result #modal-invoice-content {
+    h2,
+    .h2 {
+      position: relative;
+      z-index: 2;
+    }
+    .komputer > img {
+      width: 270px;
+      margin-top: 20px;
+    }
+    .judul {
+      font-size: 37px;
+      padding-left: 20px;
+    }
+  }
+
+  .modal-invoice-result .modal-invoice-content {
+    h2,
+    .h2 {
+      position: relative;
+      z-index: 2;
+    }
+    .invoice-stamp {
+      top: 300px;
+      z-index: 1;
+    }
+  }
+
+  .modal-reservasi-form {
+    .radio-grid {
+      flex-direction: column;
+    }
+
+    .checkbox-label {
+      padding: 0 10px;
+
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .modal-reservasi-form .line-break.d-none {
+    display: block !important;
+  }
+}
+@media (max-width: 400px) {
+  .modal-cekform {
+    .imgbox {
+      min-height: 100px;
+    }
+    .modal-content {
+      height: 600px;
+    }
+  }
+
+  .modal-reservasi-wa {
+    .modal-content {
+      min-height: 650px;
+    }
+  }
+}

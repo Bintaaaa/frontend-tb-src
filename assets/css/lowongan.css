@@ -1,0 +1,50 @@
+.section1 {
+  padding-top: 100px;
+}
+.bg-1 {
+  background-color: #288e66;
+}
+.bg-2 {
+  background-color: #faebb8;
+}
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 76px;
+  color: rgb(255, 255, 255);
+}
+.lowongan > img {
+  width: 600px;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+.linka {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000201;
+}
+.text-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 576px) {
+  .image > img {
+    width: 300px;
+  }
+  .title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

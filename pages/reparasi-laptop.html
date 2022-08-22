@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/reparasi.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg main-nav">
+      <div class="container h-100">
+        <div class="nav-brand">
+          <div class="row">
+            <div class="col-3 col-lg-3">
+              <div class="imgbox">
+                <img src="../assets/img/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="namebox text-left">Tanpabatas Group</div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Jasa
+              </a>
+              <div
+                class="dropdown-menu dd-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item underline" href="#"
+                  >Reparasi Laptop/PC</a
+                >
+                <a class="dropdown-item" href="#">Pembuatan Web</a>
+                <a class="dropdown-item" href="#">Pembuatan Aplikasi Mobile</a>
+                <a class="dropdown-item" href="#">Pembuatan UI/UX</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Karir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gabung</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="section1 bg-1 pt-3">
+      <div class="container-fluid">
+        <div class="container">
+          <h1 class="title">
+            Apapun masalahnya, <br />
+            apapun kerusakannya, <br />
+            mudah di genggaman kami
+          </h1>
+          <div class="row">
+            <div class="container">
+              <div class="button mt-5">
+                <button
+                  class="btn btn1 reservasiborder"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reservasiModal"
+                >
+                  Reservasi
+                </button>
+                <button
+                  class="btn btn-light invoicebtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#invoiceModal"
+                >
+                  Cek Invoice
+                </button>
+              </div>
+              <div class="komputer text-end mb-3">
+                <img
+                  src="../assets/img/komputer.svg"
+                  alt=""
+                  class="justify-content-end"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2 bg-2">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="desc col-lg-5 col-12 order-2">
+              <h2 class="text-2 my-2">Laptop atau PC mu bermasalah?</h2>
+              <p class="text-1 pt-3">
+                <b>Tanpabatas Service</b> menerima semua permasalahan yang
+                berhubungan dengan Laptop atau PC kamu. Tidak perlu ragu lagi
+                dengan hasil yang akan kalian dapatkan, sudah lebih dari 100
+                orang kami tangani dan mendapatkan ulasan yang memuaskan.
+              </p>
+            </div>
+            <div class="laptop col-lg-5 order-lg-2 pb-3">
+              <img src="../assets/img/laptop.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3 bg-1">
+      <div class="container-fluid">
+        <div class="container pt-5">
+          <h1 class="text-center text-3">Manfaat Sistem Reservasi</h1>
+          <div class="reservasi">
+            <div class="row justify-content-between">
+              <div class="col-lg-3 order-2">
+                <img src="../assets/img/antri.svg" alt="" />
+
+                <h2 class="text-4 py-3">Minimalisir Antrian</h2>
+                <p class="text-5">
+                  Dengan adanya fitur reservasi kamu gaperlu khawatir harus
+                  mengantri panjang.
+                </p>
+              </div>
+              <div class="col-lg-5 order-1 order-lg-3 reservasi text-center">
+                <img src="../assets/img/reservasi.svg" alt="" />
+              </div>
+              <div class="col-lg-3 order-3">
+                <img src="../assets/img/komunikasi.svg" alt="" class="logo" />
+                <h2 class="text-4 py-3">Kelancaran Komunikasi</h2>
+                <p class="text-5">
+                  Follow up dan komunikasi dapat diatur sendiri secara otomatis
+                  oleh sistem
+                </p>
+              </div>
+              <div class="col-lg-3 order-4">
+                <img src="../assets/img/duit.svg" alt="" class="logo" />
+                <h2 class="text-4 py-3">Tanpa Biaya</h2>
+                <p class="text-5">
+                  Sistem reservasi di tanpabatas tidak dipungut biaya alias
+                  GRATIS, kamu bisa membuat janji dengan teknisi di jam yang
+                  kamu mau.
+                </p>
+              </div>
+              <div class="col-lg-3 order-5">
+                <img src="../assets/img/kemudahan.svg" alt="" class="logo" />
+                <h2 class="text-4">Kemudahan Pengguna</h2>
+                <p class="text-5">
+                  Proses reservasi dapat ditentukan sesuai dengan waktu yang
+                  kamu mau
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="waves bg-2">
+      <img src="../../img/waves.svg" alt="" />
+    </div>
+
+    <div class="section4 bg-2 pb-5">
+      <div class="container-fluid">
+        <div class="container">
+          <h1 class="text-center text-6">Alur Sistem Reservasi</h1>
+          <div class="alur mt-5">
+            <div class="image-1">
+              <img src="../assets/img/alur.svg" alt="" class="container" />
+            </div>
+            <div class="image-2">
+              <img src="../assets/img/alur2.png" alt="" class="container" />
+            </div>
+            <div class="image-3">
+              <img src="../assets/img/alur3.png" alt="" class="container" />
+            </div>
+
+            <div class="mobile">
+              <div class="container text-center">
+                <div class="alur-item align-items-center">
+                  <div class="col-12">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-12">
+                          <div class="logoo text-start">
+                            <img src="../assets/img/mouse.svg" alt="" />
+                            <h2 class="text-7 pt-1">Klik tombol reservasi</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                          <p class="text-8">
+                            Untuk melakukan reservasi kamu harus klik tombol
+                            reservasi terlebih dahulu
+                          </p>
+                          <div class="text-center">
+                            <p class="rounded-4 badge px-4 bg-light text-9">
+                              Step 1
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-12">
+                          <div class="logoo text-start">
+                            <img src="../assets/img/cc.svg" alt="" />
+                            <h2 class="text-7 pt-1">Isi form reservasi</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                          <p class="text-8">
+                            Setelah itu isi form sesuai data diri kamu dan
+                            keluhan
+                          </p>
+                          <div class="text-center">
+                            <p class="rounded-4 badge px-4 bg-light text-9">
+                              Step 2
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-12">
+                          <div class="logoo text-start">
+                            <img src="../assets/img/kalender.svg" alt="" />
+                            <h2 class="text-7 pt-1">Tentukan tanggal & jam</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                          <p class="text-8">
+                            Tentukan tanggal dan jam , sesuai dengan waktu yang
+                            kamu inginkan
+                          </p>
+                          <div class="text-center">
+                            <p class="rounded-4 badge px-4 bg-light text-9">
+                              Step 3
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-12">
+                          <div class="logoo text-start">
+                            <img src="../assets/img/hp.svg" alt="" />
+                            <h2 class="text-7 pt-1">Konfirmasi</h2>
+                          </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                          <p class="text-8">
+                            Yang terakhir kamu harus konfirmasi dengan klik
+                            tombol whatsapp
+                          </p>
+                          <div class="text-center">
+                            <p class="rounded-4 badge px-4 bg-light text-9">
+                              Step 4
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-5 justify-content-center">
+            <a href="" class="btn btn2 rounded-4 shadow-lg">Reservasi > </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section5 bg-1 pt-5">
+      <div class="container">
+        <h1 class="text-3 text-center">Layanan Rumah</h1>
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-7 rumah order-lg-2">
+            <img src="../assets/img/rumah.svg" alt="" />
+          </div>
+          <div class="col-lg-5 order-lg-1">
+            <p class="text-4 text-start p pt-5">
+              Tanpabatas Service
+              <span class="p2">
+                juga menerima pelayanan dirumah untuk wilayah yang bisa
+                terjangkau oleh kami. Untuk melihat area jangkauan pelayanan
+                rumah bisa klik yang di bawah ini!</span
+              >
+            </p>
+            <a href="" class="btn btn-light text-dark mt-3">Lihat Detail > </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gabung">
+      <div class="container">
+        <div class="gabung-box">
+          <div class="row m-2">
+            <div class="col-12 col-md-9 d-flex align-items-center">
+              <div class="">
+                <p>
+                  Dengan kami membawa perubahan besar dalam bidang teknologi.
+                </p>
+
+                <a href="#" class="d-none d-md-inline">Gabung</a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-3 d-flex justify-content-center align-items-center mt-4"
+            >
+              <img src="../assets/img/guywithcat.png" alt="" srcset="" />
+            </div>
+            <div class="col-12 d-md-none mt-4">
+              <a href="#" class="d-inline">Gabung</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="invoiceModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        id="invoice-dialog"
+        class="modal-dialog modal-dialog-centered modal-cekform"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div id="modal-cekform-content">
+              <div class="imgbox">
+                <img src="../assets/img/laptopt.png" alt="" srcset="" />
+              </div>
+              <div class="text-and-inputs">
+                <h3>Cari Status Pengerjaan, Cetak Invoice & Cek Garansi</h3>
+                <p>Masukan Invoice dibawah</p>
+                <form id="invoice-form" class="input-group mb-3">
+                  <input
+                    type="number"
+                    class="form-control input-invoice"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-invoice d-none d-sm-block"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    Enter
+                  </button>
+                  <button
+                    class="btn btn-invoice btn-invoice-sm d-block d-sm-none"
+                    type="submit"
+                  >
+                    Enter
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="d-none" id="modal-cekform-loading">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <div
+              id="modal-invoice-content"
+              class="modal-invoice-content d-none"
+            >
+              <h2>Status</h2>
+              <div class="top-sect">
+                <div id="namateknisi" class="invoice-desc">Nama Teknisi:</div>
+                <div id="namateknisi-output" class="invoice-output">
+                  Bukhori Bukhori Bin Bukhori
+                </div>
+                <div id="masagaransi" class="invoice-desc">Masa Garansi:</div>
+                <div id="masagaransi-output" class="invoice-output">
+                  Cek Setelah Selesai
+                </div>
+                <div id="tanggalselesai" class="invoice-desc">
+                  Tanggal Selesai:
+                </div>
+                <div id="tanggalselesai-output" class="invoice-output">-</div>
+              </div>
+              <hr />
+              <div class="h2">Nomor invoice</div>
+              <h2>123123123123123</h2>
+              <hr />
+              <div class="bot-sect">
+                <div class="bot-sect-ket">
+                  <div id="perankat" class="invoice-desc">Perangkat:</div>
+                  <div id="perankat-output" class="invoice-output">
+                    Lenovo Thinkpad
+                  </div>
+                  <div id="keluhan" class="invoice-desc">Keluhan:</div>
+                  <div id="keluhan-output" class="invoice-output">
+                    Ganti LCD
+                  </div>
+                  <div id="status" class="invoice-desc">Status:</div>
+                  <div id="status-output" class="invoice-output">
+                    Dalam Proses Pembelian Sparepart
+                  </div>
+                </div>
+                <div class="bot-sect-pdf">
+                  <h2>Cetak Invoice</h2>
+                  <a href="#">
+                    <div class="pdf-imgbox">
+                      <img src="../assets/img/pdf.svg" alt="" srcset="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <img id="stamp" class="invoice-stamp d-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="reservasiModal"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        id="reservasi-dialog"
+        class="modal-dialog modal-dialog-centered modal-reservasi-form"
+      >
+        <!-- modal-reservasi-form -->
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div id="reservasi-form">
+              <h2>
+                Form<br class="line-break d-none" />
+                pengisian reservasi
+              </h2>
+
+              <form action="" id="formReservasiModal">
+                <div class="form-group">
+                  <label for="nameInput">Nama</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="nameInput"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mobileInput">Nomor Telepon</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    name="mobile"
+                    id="mobileInput"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="emailInput">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="emailInput"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="keluhanInput">Keluhan</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="keluhan"
+                    id="keluhanInput"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="">Jadwal Reservasi</label>
+                  <div class="date-time-group">
+                    <input
+                      type="date"
+                      name="date"
+                      class="form-control"
+                      id="reservasi-date"
+                    />
+                    <input
+                      type="time"
+                      name="time"
+                      class="form-control"
+                      id="reservasi-time"
+                    />
+                  </div>
+                </div>
+                <div class="form-group radio-grid">
+                  <div class="radio">
+                    <input
+                      id="datang-tempat"
+                      name="tempat"
+                      value="datang-langsung"
+                      type="radio"
+                      checked
+                    />
+                    <label class="radio-label me-1" for="datang-tempat"
+                      >Datang Langsung</label
+                    >
+                  </div>
+
+                  <div class="radio">
+                    <input
+                      id="pelayan-rumah"
+                      name="tempat"
+                      value="pelayanan-rumah"
+                      type="radio"
+                      checked
+                    />
+                    <label class="radio-label" for="pelayan-rumah"
+                      ><span>Pelayanan Rumah</span></label
+                    >
+                  </div>
+                </div>
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    name="reservasi-ulang"
+                    id="confirm-reservasi"
+                  />
+                  <label for="confirm-reservasi" class="checkbox-label"
+                    >Dengan ini saya setuju, jika melewati batas waktu 1 jam
+                    dari reservasi, maka harus reservasi ulang.</label
+                  >
+                </div>
+                <div class="main-button">
+                  <button type="submit">Kirim</button>
+                </div>
+              </form>
+            </div>
+            <div id="modal-reservasi-loading" class="d-none">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+            <div id="modal-reservasi-wa" class="d-none">
+              <img class="waimg" src="../assets/img/checkmarkwa.png" alt="" />
+              <h2>Sukses Reservasi</h2>
+              <p>Tahap terakhir nih, silahkan konfirmasi melalui whatsapp</p>
+              <a href="#"
+                >Whatsapp <img src="../assets/img/watr.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-client">
+        <div class="container">
+          <div class="d-flex align-items-center p-0 client-text">
+            <h1>Klien <br />Unggulan</h1>
+          </div>
+          <div class="client-carsvert">
+            <div class="vertical-carousels">
+              <div class="splide" id="splideVertCar1">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Huobi Club</h5>
+                          <p>
+                            Houbi Club, perusahaan yang bergerak di bidang
+                            outbound indoor.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/huobicol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>PT. Prolabios</h5>
+                          <p>
+                            PT Prolabios Mitra Analitika adalah perusahaan yang
+                            bergerak di bidang distribusi alat-alat habis pakai
+                            untuk Laboratorium
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/pmacol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Huobi Club</h5>
+                          <p>
+                            Houbi Club, perusahaan yang bergerak di bidang
+                            outbound indoor.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/huobicol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>PT. Prolabios</h5>
+                          <p>
+                            PT Prolabios Mitra Analitika adalah perusahaan yang
+                            bergerak di bidang distribusi alat-alat habis pakai
+                            untuk Laboratorium
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/pmacol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Huobi Club</h5>
+                          <p>
+                            Houbi Club, perusahaan yang bergerak di bidang
+                            outbound indoor.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/huobicol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>PT. Prolabios</h5>
+                          <p>
+                            PT Prolabios Mitra Analitika adalah perusahaan yang
+                            bergerak di bidang distribusi alat-alat habis pakai
+                            untuk Laboratorium
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/pmacol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Huobi Club</h5>
+                          <p>
+                            Houbi Club, perusahaan yang bergerak di bidang
+                            outbound indoor.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/huobicol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>PT. Prolabios</h5>
+                          <p>
+                            PT Prolabios Mitra Analitika adalah perusahaan yang
+                            bergerak di bidang distribusi alat-alat habis pakai
+                            untuk Laboratorium
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/pmacol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Huobi Club</h5>
+                          <p>
+                            Houbi Club, perusahaan yang bergerak di bidang
+                            outbound indoor.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/huobicol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>PT. Prolabios</h5>
+                          <p>
+                            PT Prolabios Mitra Analitika adalah perusahaan yang
+                            bergerak di bidang distribusi alat-alat habis pakai
+                            untuk Laboratorium
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/pmacol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="splide" id="splideVertCar2">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>FIFGROUP</h5>
+                          <p>
+                            FIFGROUP, member of ASTRA Perusahaan Pembiayaan
+                            Terpercaya di Indonesia.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/fifgcol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Grand Mulya Bogor</h5>
+                          <p>
+                            Grand Mulya Bogor, resort & conventional hotel yang
+                            berada di Sukaraja Sentul, Bogor
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/gmbcol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>FIFGROUP</h5>
+                          <p>
+                            FIFGROUP, member of ASTRA Perusahaan Pembiayaan
+                            Terpercaya di Indonesia.
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/fifgcol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="vertcar__card">
+                        <div class="vertcar__texts">
+                          <h5>Grand Mulya Bogor</h5>
+                          <p>
+                            Grand Mulya Bogor, resort & conventional hotel yang
+                            berada di Sukaraja Sentul, Bogor
+                          </p>
+                        </div>
+                        <div class="vertcar__img">
+                          <img src="../assets/img/gmbcol.png" alt="" />
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-footer w-100">
+        <img src="../assets/img/wave.png" class="w-100 top-facingdown" alt="" />
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-body py-5">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Perusahaan</li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Karir</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Jasa</li>
+                    <li><a href="#">Reparasi Laptop/PC</a></li>
+                    <li><a href="#">Pembuatan Website</a></li>
+                    <li><a href="#">Pembuatan Aplikasi Mobile</a></li>
+                    <li><a href="#">Pembuatan UI/UX</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title"><a> Hubungi Kami</a></li>
+                    <li><a href="#">Lokasi Kami </a></li>
+                    <li><a href="#">Area Home Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Follow Us</li>
+                    <li class="icon-grid">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="more-inf">
+                      <span class="more-inf-title">Telepon</span> : 087746983216
+                      <br />
+                      <span class="more-inf-title">Email</span> :
+                      <span class="more-inf-email">cs@tanpabatasgroup.com</span
+                      ><br />
+                    </li>
+                    <li class="more-inf-addr">
+                      <span>
+                        Jl. Pondok Rumput Gg.Mujaer no.39 Rt2 Rw12 Kelurahan
+                        Kebon Pedes Kecamatan Tanah Sareal
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-botfrag">
+                <div class="footer-logo">
+                  <div class="d-flex">
+                    <div class="footer-logobox">
+                      <img src="../assets/img/logo.png" alt="" />
+                    </div>
+                    <p>Tanpabatas Group</p>
+                  </div>
+                </div>
+                <p class="footer-copyright">
+                  © 2022 Tanpabatas Group. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/reparasi.js"></script>
+  </body>
+</html>
