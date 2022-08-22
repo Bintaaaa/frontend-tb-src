@@ -1,0 +1,229 @@
+@import "../../vars";
+
+body {
+  background-color: $tanpabatascream;
+}
+
+.error404 {
+  position: relative;
+  min-height: 110vh;
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1320px;
+    height: 100%;
+  }
+
+  .error404-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'texts img';
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    // min-height: 447px;
+  }
+
+
+  .error404-texts{
+    grid-area: texts;
+  }
+  .error404-img{
+    grid-area: img;
+
+    img{
+      position: relative;
+      top: -10%;
+    }
+  }
+
+  h1 {
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: $tanpabatascream;
+    margin-bottom: 24px;
+  }
+
+  .error404-404 {
+    color: #a53030;
+
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  .error404-subtext {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $tanpabatascream;
+
+    margin-bottom: 48px;
+  }
+
+  .error404-btns {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas: "back beranda";
+    width: 100%;
+    max-width: 245px;
+
+    .error404-backbtn {
+      grid-area: back;
+      width: 129px;
+      height: 48px;
+      border-radius: 8px;
+      background-color: #fff;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #344054;
+      border: 1px solid #d0d5dd;
+      position: relative;
+
+      &:hover{
+        background-color: darken($color: (#fff), $amount: 8);
+      }
+      &:active{
+        background-color: darken($color: (#fff), $amount: 12);
+      }
+
+      img{
+        top: 0;
+        margin-right: 8px;
+      }
+    }
+    .error404-berandabtn {
+      grid-area: beranda;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 20px;
+      gap: 8px;
+
+      width: 104px;
+      height: 48px;
+
+      background: #21B237;
+      /* Primary/600 */
+
+      border: 1px solid #7F56D9;
+      /* Shadow/xs */
+
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      color: #fff;
+      margin-left: 12px;
+
+      &:hover{
+        background-color: darken($color: (#21B237), $amount: 3);
+      }
+      &:active{
+        background-color: darken($color: (#21B237), $amount: 5);
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1200px){
+  .error404{
+    h1{
+      font-size: 50px;
+      line-height: normal;
+    }
+    .error404-subtext{
+      font-size: 17px;
+    }
+  }
+}
+
+@media(max-width: 992px){
+  .error404{
+    position: relative;
+    height: auto;
+    padding: 100px 0;
+    padding-top: 180px;
+    min-height: unset;
+    .container{
+      height: 100%;
+    }
+    .error404-grid{
+      position: relative;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'img' 'texts'; 
+      top: 20%;
+      transform: translateY(0);
+    }
+    .error404-img{
+      img{
+       left: 50%;
+       transform: translateX(-50%);
+      }
+    }
+
+    .error404-texts{
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .error404{
+    .error404-img img{
+      width: 100%;
+    }
+
+    .error404-btns{
+      grid-template-columns: 1fr;
+      grid-template-areas: "beranda" "back";
+      max-width: none;
+  
+      button{
+        width: 100% !important;
+      }
+      .error404-berandabtn{
+        margin-bottom: 20px;
+        margin-left: 0;
+      }
+      }
+  }
+}
+
+@media(max-width: 576px){
+  .error404{
+    padding-top: 150px;
+    .container{
+      width: 95%;
+    }
+    br{
+      display: none;
+    }
+    h1{
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+    .error404-404{
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    .error404-subtext{
+      font-size: 17px;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+  }
+}

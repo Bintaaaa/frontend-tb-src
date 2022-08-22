@@ -1,0 +1,337 @@
+@import "../../vars";
+body {
+  background-color: $tanpabatascream;
+}
+
+.page-readblog {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.blog-wrapper {
+  padding-top: 50px;
+  padding-top: 130px;
+  background-color: #fff;
+  padding-bottom: 70px;
+
+  hr {
+    border-top: 2px solid black;
+    opacity: 1;
+
+    &.above-blog {
+      margin-bottom: 75px;
+    }
+  }
+
+  .main-title {
+    font-family: "Poppins";
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .read-dateshare {
+    margin-bottom: 25px;
+
+    .share {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .date {
+      font-family: "Poppins";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .col-12 {
+      padding: 0 40px;
+    }
+  }
+
+  .sos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+  }
+
+  .sos {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  .read-blog {
+    .read-blog-imgbox {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 45px;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    h1 {
+      font-family: "Poppins";
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 57px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-family: "Poppins";
+      font-size: 22px;
+      font-weight: 00;
+      line-height: 43px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      margin-bottom: 55px;
+    }
+  }
+
+  .another-blog {
+    h1 {
+      font-family: "Poppins";
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 57px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    hr {
+      margin-bottom: 45px;
+    }
+
+    .blogs-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        column-gap: 32px;
+        row-gap: 100px;
+        margin-top: 45px;
+        min-height: 400px;
+        position: relative;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .blog {
+        .blog-imgbox {
+          border-radius: 40px;
+          overflow: hidden;
+          height: 165px;
+          img {
+            width: 100%;
+          }
+        }
+  
+        h5 {
+          font-family: "Poppins";
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: 0em;
+          text-align: left;
+  
+          margin-top: 20px;
+          min-height: 70px;
+        }
+  
+        p {
+          font-family: "Poppins";
+          font-size: 18px;
+          font-weight: 400;
+          text-align: left;
+          width: 100%;
+        }
+  
+        h6 {
+          font-family: "Poppins";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27px;
+          letter-spacing: 0em;
+          text-align: left;
+          opacity: 0.5;
+        }
+  
+        h5,
+        h6,
+        p {
+          margin-left: 10px;
+          word-break: break-word;
+        }
+      }
+      .blog-noarticle {
+        position: absolute;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .blog-noarticle-text {
+        width: 90%;
+        max-width: 700px;
+  
+        h1 {
+          font-family: "Poppins";
+          font-size: 38px;
+          font-weight: 600;
+          line-height: 57px;
+          letter-spacing: 0em;
+          text-align: center;
+          margin-bottom: 35px;
+        }
+  
+        p {
+          font-family: "Poppins";
+          font-size: 29px;
+          font-weight: 400;
+          line-height: 48px;
+          letter-spacing: 0em;
+        }
+      }
+  }
+}
+
+.gabung {
+    .gabung-box {
+      background-color: #eade36;
+      margin: -50px auto;
+      margin-bottom: 224px;
+      padding: 40px 20px;
+      max-width: 700px;
+      border-radius: 75px;
+      box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+      position: relative;
+      z-index: 10;
+  
+      p {
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+  
+      a {
+        color: $tanpabatasgreen;
+        font-family: "Poppins";
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+        text-decoration: none;
+      }
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+@media (max-width: 768px) {
+  .page-readblog {
+    .container {
+      width: 90%;
+    }
+  }
+
+  .blog-wrapper {
+    .read-dateshare {
+      .date {
+        justify-content: center;
+      }
+    }
+    .justify-content-end {
+      justify-content: center !important;
+      margin: 30px 0;
+    }
+
+    .sos-grid {
+      column-gap: 20px;
+    }
+
+    .sos {
+      width: 30px;
+      height: 30px;
+    }
+
+    .hr {
+      &.above-blog {
+        margin-bottom: 30px;
+      }
+    }
+    .read-blog {
+      .read-blog-imgbox {
+        height: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .page-readblog {
+    .container {
+      width: 95%;
+    }
+  }
+
+  .blog-wrapper {
+    .main-title{
+      font-size: 28px;
+    }
+    .read-blog {
+      .read-blog-imgbox {
+        height: 200px;
+      }
+
+      h1{
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 38px;
+        word-wrap: inherit;
+      }
+    }
+  }
+}

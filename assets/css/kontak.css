@@ -1,0 +1,383 @@
+body {
+  background: #faebb8;
+  background: repeating-linear-gradient(#288E66, #288E66 700px, #FAEBB8 700px, #FAEBB8 1500px);
+}
+
+.kontak-tkmts {
+  font-family: Poppins;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+#kontak-iconcon {
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#kontak-iconcon .kontak-icon {
+  position: relative;
+  transform: scale(0.8);
+  transition: transform 200ms;
+  cursor: pointer;
+}
+#kontak-iconcon .kontak-icon:hover {
+  transform: scale(1);
+}
+#kontak-iconcon .kontak-icon .sm img {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kontak-iconcon .kontak-icon.active {
+  transform: scale(1.1);
+}
+#kontak-iconcon .kontak-iconbox {
+  width: 110px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#kontak-iconcon .kontak-iconbox img {
+  width: 100%;
+}
+#kontak-iconcon p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffff;
+}
+
+.kontak-box {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.kontak-box h3 {
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.kontak-lokasi {
+  background-color: #7ccc6c;
+}
+.kontak-lokasi .lokasi-imgbox {
+  width: 75%;
+  border-radius: 50px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.kontak-lokasi .lokasi-imgbox img {
+  width: 100%;
+}
+.kontak-lokasi .lokasi-imgbox-direction {
+  width: 98%;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.kontak-lokasi .lokasi-imgbox-direction img {
+  width: 100%;
+}
+.kontak-lokasi h1 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.kontak-lokasi ul {
+  margin-bottom: 50px;
+}
+.kontak-lokasi ul li::marker {
+  color: #fff;
+}
+.kontak-lokasi ul h2 {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.kontak-lokasi .lokasi-chatme {
+  margin-top: 100px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.kontak-lokasi .lokasi-chatme h2 {
+  font-family: "Poppins";
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 57px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.kontak-lokasi .lokasi-chatme a {
+  background-color: #fff;
+  color: #288E66;
+  text-decoration: none;
+  border-radius: 15px;
+  width: 214px;
+  height: 50px;
+  border: 1px solid #288E66;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+}
+.kontak-lokasi .lokasi-chatme a img {
+  margin-right: 10px;
+}
+
+.kontak-kontak {
+  background-color: #ff808b;
+  position: relative;
+}
+.kontak-kontak ul {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+}
+.kontak-kontak ul li {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.kontak-kontak ul li::marker {
+  height: 20px;
+}
+.kontak-kontak ul li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+.kontak-jangkauan {
+  background-color: #ff8f1c;
+}
+.kontak-jangkauan .jangkauan-imgbox {
+  width: 550px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.kontak-jangkauan .jangkauan-imgbox img {
+  width: 100%;
+}
+
+.gabung .gabung-box {
+  background-color: #eade36;
+  margin: -50px auto;
+  padding: 40px 20px;
+  max-width: 700px;
+  border-radius: 75px;
+  box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 11px 73px -35px rgba(0, 0, 0, 0.75);
+  position: relative;
+  z-index: 10;
+}
+.gabung .gabung-box p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.gabung .gabung-box a {
+  color: #288E66;
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+}
+.gabung .gabung-box img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .kontak-lokasi .lokasi-chatme h2 {
+    font-size: 28px;
+  }
+  .kontak-lokasi .lokasi-chatme a {
+    width: 179px;
+    height: 52px;
+  }
+}
+@media (max-width: 768px) {
+  #kontak-iconcon {
+    width: 500px;
+  }
+  #kontak-iconcon .kontak-iconbox {
+    width: 90px;
+  }
+  #kontak-iconcon .kontak-iconbox img {
+    width: 100%;
+  }
+  #kontak-iconcon p {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .kontak-lokasi h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .kontak-lokasi ul {
+    margin-bottom: 20px;
+  }
+  .kontak-lokasi ul h2 {
+    font-size: 15px;
+  }
+  .kontak-lokasi .lokasi-direction {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .kontak-lokasi .lokasi-direction span {
+    color: #ff0000;
+  }
+  .kontak-lokasi .lokasi-direction .direction-imgbox {
+    border: 3px solid black;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  .kontak-lokasi .lokasi-direction p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .kontak-lokasi .lokasi-direction .direction-arrow {
+    height: 90px;
+    position: relative;
+  }
+  .kontak-lokasi .lokasi-direction .direction-arrow img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 50px;
+  }
+}
+@media (max-width: 675px) {
+  .kontak-jangkauan .jangkauan-imgbox {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .kontak-kontak ul li {
+    font-size: 19px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 568px) {
+  .kontak-tkmts {
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+
+  #kontak-iconcon {
+    width: 400px;
+  }
+  #kontak-iconcon .kontak-iconbox {
+    width: 70px;
+  }
+  #kontak-iconcon .kontak-iconbox img {
+    width: 100%;
+  }
+  #kontak-iconcon p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+}
+@media (max-width: 400px) {
+  #kontak-iconcon {
+    width: 300px;
+  }
+  #kontak-iconcon .kontak-iconbox {
+    width: 50px;
+  }
+  #kontak-iconcon .kontak-iconbox img {
+    width: 100%;
+  }
+  #kontak-iconcon p {
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .kontak-lokasi .lokasi-direction {
+    width: 250px;
+  }
+  .kontak-lokasi .lokasi-direction .direction-imgbox {
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .kontak-lokasi .lokasi-direction p {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .kontak-kontak ul li {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .kontak-kontak ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=kontak.css.map */

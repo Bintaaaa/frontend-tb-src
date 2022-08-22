@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/beranda.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg main-nav">
+      <div class="container h-100">
+        <div class="nav-brand">
+          <div class="row">
+            <div class="col-3 col-lg-3">
+              <div class="imgbox">
+                <img src="../assets/img/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="namebox text-left">Tanpabatas Group</div>
+            </div>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Tentang</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Jasa
+              </a>
+              <div class="dropdown-menu dd-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item underline" href="#">Reparasi Laptop/PC</a>
+                <a class="dropdown-item" href="#">Pembuatan Web</a>
+                <a class="dropdown-item" href="#">Pembuatan Aplikasi Mobile</a>
+                <a class="dropdown-item" href="#">Pembuatan UI/UX</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Karir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hubungi Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gabung</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="pages page-beranda">
+      <div class="beranda-landing">
+        <img src="../assets/img/indonesia.svg" alt="" srcset="">
+        <div class="container">
+          <h1>1 Platform</h1>
+          <h1>3 Kota</h1>
+          <h1>50.000 Pencarian</h1>
+        </div>
+      </div>
+
+        <div class="beranda-client">
+          <div class="container">
+            <div class="d-flex align-items-center p-0 client-text">
+              <h1>Klien <br />Unggulan</h1>
+            </div>
+            <div class="client-carsvert">
+              <div class="vertical-carousels">
+                <div class="splide" id="splideVertCar1">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="vertcar__card">
+                          <div class="vertcar__texts">
+                            <h5>Huobi Club</h5>
+                            <p>Houbi Club, perusahaan yang bergerak di bidang outbound indoor.</p>
+                          </div>
+                          <div class="vertcar__img">
+                            <img src="../assets/img/huobicol.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="vertcar__card">
+                          <div class="vertcar__texts">
+                            <h5>PT. Prolabios</h5>
+                            <p>PT Prolabios Mitra Analitika adalah perusahaan yang bergerak di bidang distribusi alat-alat
+                              habis pakai untuk Laboratorium</p>
+                          </div>
+                          <div class="vertcar__img">
+                            <img src="../assets/img/pmacol.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="splide" id="splideVertCar2">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="vertcar__card">
+                          <div class="vertcar__texts">
+                            <h5>FIFGROUP</h5>
+                            <p>FIFGROUP, member of ASTRA Perusahaan Pembiayaan Terpercaya di Indonesia.</p>
+                          </div>
+                          <div class="vertcar__img">
+                            <img src="../assets/img/fifgcol.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="vertcar__card">
+                          <div class="vertcar__texts">
+                            <h5>Grand Mulya Bogor</h5>
+                            <p>Grand Mulya Bogor, resort & conventional hotel yang berada di Sukaraja Sentul, Bogor</p>
+                          </div>
+                          <div class="vertcar__img">
+                            <img src="../assets/img/gmbcol.png" alt="">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="beranda-pencapaian-slider-wrapper">
+        <div class="beranda-pencapaian">
+          <div class="container">
+            <h4>Pencapaian</h4>
+            <div class="row">
+              <div class="col-12 col-md-4 justify-content-center d-flex">
+                <div class="beranda-circle green">
+                  <p>Top 5 pencarian “servis laptop di bogor” via google</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 justify-content-center d-flex">
+                <div class="beranda-circle pink">
+                  <p>Sudah lebih dari 50.000 pencarian di google</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 justify-content-center d-flex">
+                <div class="beranda-circle merah orange">
+                  <p>Menjadi wadah iklan umkm secara gratis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="beranda-slider">
+          <div class="cardslider">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div class="col-12 col-lg-3">
+                  <h2 class="cardslider-title">
+                    Ada apa aja di <br class="br" />
+                    Tanpabatas ?
+                  </h2>
+                </div>
+                <div class="col-12 col-lg-9">
+                  <div class="splide" id="cardSlider">
+                    <div class="splide__track">
+                      <ul class="splide__list" id="spliderSlider"></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="beranda-artikel">
+        <div class="beranda-artikel-greenbg"></div>
+        <div class="beranda-artikel-content">
+          <h2>Artikel</h2>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="artikel-big-box">
+                  <div class="big-box-news">
+                    <img src="../assets/img/youtubeaudio.png" alt="" />
+                  </div>
+                  <div class="big-box-news news-text">
+                    Ekstensi vscode bisa menyelesaikan permasalahan ...
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="artikel-box artikel-box--first">
+                  <div class="artikel-box-img">
+                    <img src="../assets/img/youtubedownload.png" alt="" />
+                  </div>
+                  <div class="artikel-box-text">
+                    <div class="title-text">
+                      Cara mendownload video Youtube di web....
+                    </div>
+                    <div class="desc-text">
+                      Ingin mendownload video youtube ?
+                    </div>
+                  </div>
+                </div>
+                <div class="artikel-box">
+                  <div class="artikel-box-img">
+                    <img src="../assets/img/vscodeext.png" alt="" />
+                  </div>
+                  <div class="artikel-box-text">
+                    <div class="title-text">Ekstensi vscode yang bagus</div>
+                    <div class="desc-text">
+                      Ekstensi vscode bisa menyelesaikan permasalahan ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="artikel-wide-box w-100">
+                  <div class="wide-box-img">
+                    <img src="../assets/img/laptopmail.png" alt="" srcset="" />
+                  </div>
+                  <div class="wide-box-text">
+                    <h1>
+                      Membiarkan Inbox Email Penuh Dapat Memicu Pemanasa...
+                    </h1>
+                    <p>
+                      Global Warming (Pemanasan Global) merupakan suatu kondisi
+                      dimana rata-rata suhu ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="beranda-ulasan">
+        <h1>Ulasan</h1>
+
+        <div id="ulasanSlider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list" id="ulasanSplideList"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="gabung">
+        <div class="container">
+          <div class="gabung-box">
+            <div class="row m-2">
+              <div class="col-12 col-md-9 d-flex align-items-center">
+                <div class="">
+                  <p>
+                    Dengan kami membawa perubahan besar dalam bidang teknologi.
+                  </p>
+              
+                    <a href="#" class="d-none d-md-inline">Gabung</a>
+                  
+                </div>
+              </div>
+              <div class="col-12 col-md-3 d-flex justify-content-center align-items-center mt-4">
+                <img src="../assets/img/guywithcat.png" alt="" srcset="" />
+              </div>
+              <div class="col-12 d-md-none mt-4">
+                <a href="#" class="d-inline">Gabung</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-footer w-100">
+        <img src="../assets/img/wave.png" class="w-100 top-facingdown" alt="" />
+        <div class="footer-content">
+          <div class="container">
+  
+            <div class="footer-body py-5">
+              <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Perusahaan</li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Karir</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Jasa</li>
+                    <li><a href="#">Reparasi Laptop/PC</a></li>
+                    <li><a href="#">Pembuatan Website</a></li>
+                    <li><a href="#">Pembuatan Aplikasi Mobile</a></li>
+                    <li><a href="#">Pembuatan UI/UX</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title"><a> Hubungi Kami</a></li>
+                    <li><a href="#">Lokasi Kami </a></li>
+                    <li><a href="#">Area Home Service</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <ul>
+                    <li class="li-title">Follow Us</li>
+                    <li class="icon-grid">
+                      <div class="row">
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-4">
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="more-inf">
+                      <span class="more-inf-title">Telepon</span> : 087746983216 <br>
+                      <span class="more-inf-title">Email</span> : <span
+                        class="more-inf-email">cs@tanpabatasgroup.com</span><br>
+                    </li>
+                    <li class="more-inf-addr">
+                      <span>
+                        Jl. Pondok Rumput Gg.Mujaer no.39 Rt2 Rw12 Kelurahan Kebon Pedes Kecamatan Tanah Sareal
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-botfrag">
+                <div class="footer-logo">
+                  <div class="d-flex">
+                    <div class="footer-logobox">
+                      <img src="../assets/img/logo.png" alt="">
+                    </div>
+                    <p>Tanpabatas Group</p>
+                  </div>
+                </div>
+                <p class="footer-copyright">
+                  © 2022 Tanpabatas Group. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script type="module" src="../assets/js/beranda.js"></script>
+  <script src="../assets/js/index.js"></script>
+</html>

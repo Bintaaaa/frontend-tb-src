@@ -137,4 +137,52 @@ const cardData = [
 
 ]
 
-export { sliderData, employeeData, cardData };
+const ulasanData = [
+
+  {
+    id: 1,
+    name: "A****o",
+    img: "../../assets/img/userulasan.jpg",
+    rating: 4.0,
+    comment: "Guidenya sangat profesional dan dapat dipercaya, tidak segan untuk membantu juga.",
+    date: "13 September 2020",
+  },
+  {
+    id: 2,
+    name: "A****m",
+    img: "../../assets/img/userulasan.jpg",
+    rating: 5.0,
+    comment: "Rekom :)",
+    date: "36 Agustus 2021",
+  },
+  {
+    id: 3,
+    name: "E***y",
+    img: "../../assets/img/userulasan.jpg",
+    rating: 3.0,
+    comment: "Tadi gurunya si bimbim sadboi bgt kerjaanya curhat doang, saya ikut nangis",
+    date: "3 Desember 2021",
+  },
+  {
+    id: 4,
+    name: "B****l",
+    img: "../../assets/img/userulasan.jpg",
+    rating: 4.0,
+    comment: "Bagus.",
+    date: "5 Oktober 2021",
+  },
+  {
+    id: 5,
+    name: "B****m",
+    img: "../../assets/img/userulasan.jpg",
+    rating: 1.0,
+    comment: "Aku Sedih :(",
+    date: "19 Januari 2020",
+  },
+
+]
+
+
+
+
+export { sliderData, employeeData, cardData, ulasanData };
